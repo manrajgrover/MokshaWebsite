@@ -1,4 +1,5 @@
 {
+<<<<<<< HEAD
   "name": "flipclock",
   "version": "0.7.8",
   "homepage": "https://github.com/objectivehtml/FlipClock",
@@ -19,4 +20,26 @@
   "dependencies": {
     "jquery": ">=1.7.0"
   }
+=======
+  "name": "jquery-final-countdown",
+  "version": "1.1.1",
+  "homepage": "https://github.com/PragmaticMates/jquery-final-countdowns",
+  "authors": [
+    "Pragmatic Mates"
+  ],
+  "description": "Final Countdown is a cool jQuery timer plugin used to countdown in seconds, minutes, hours and days to any date time, with a ring-style countdown indicator. Ideal for creating a modern coming soon & in construction page for your upcoming project.",
+  "keywords": [
+    "canvas",
+    "animations",
+    "jQuery"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "demo",
+    ".gitignore",
+    "jquery.final-countdown.js"
+  ],
+  "main": "jquery.final-countdown.min.js"
+>>>>>>> 70f93237d0719e0f05688e6973393f1d38e13480
 }
