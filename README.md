@@ -1,29 +1,19 @@
-# FlipClock.js
+# Moksha Website
+This repository contains two websites. One is basic static placeholder website with CountDown. And another is the main website.
 
-### Installation
+## Moksha Static Website
+This directory will contain the static website. We plan to use Parallax theme for it. It will be one page website with Sponsors listed and previous year pictures.
 
-FlipClock.js can be installed in the following ways:
+Current Volunteers:
+1. Anshul Khanna
+2. Divyanshi Lehri
+3. Nithila
 
-#### Bower
+## Moksha Main Website
+This directory will contain the dynamic website with Login, Registration and Event ID details.
+Stack to be used: LAMP stack. Work in this directory will start once mockups are created.
 
-	bower install FlipClock
+# Contribution Guidelines
 
-#### Node (NPM)
-
-	npm install flipclock
-
-#### Download .zip
-
-[Download .ZIP](https://github.com/objectivehtml/FlipClock/releases)
-
----
-
-### Demo & Documentation
-
-Website and documentation at http://flipclockjs.com/
-
----
-
-### License
-
-Copyright (c) 2013 Objective HTML, LCC shared under MIT LICENSE
+1. Everyone will fork this repository and submit Pull request.
+2. If anyone is not aware of Git, please watch some good lectures before contributing.

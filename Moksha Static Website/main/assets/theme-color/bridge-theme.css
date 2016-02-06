@@ -1,0 +1,210 @@
+
+
+/*=======================================
+Template Design By MarkUps.
+Author URI : http://www.markups.io/
+========================================*/
+
+.header-content h2 span {
+  color: #a5d549;
+}
+.knowmore-btn:hover,
+.knowmore-btn:focus,
+.download-btn:hover,
+.download-btn:focus{
+  background-color: #a5d549;
+  border-color: #a5d549;
+}
+.main-nav li a:hover{
+  color: #a5d549;
+} 
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > .active > a:focus {
+  color: #a5d549;
+}
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus {
+  color: #a5d549;
+}
+.search-area input[type="text"]:focus:hover {
+  border-bottom: 1px solid #a5d549;  
+}
+.search-area input[type="text"]:focus {
+  border-bottom: 1px solid #a5d549;  
+}
+.search-area input[type="submit"] {
+  background-color: #a5d549;  
+}
+.tittle>span{
+  color: #a5d549;
+}
+.single-wc-content span {
+  border: 1px solid #a5d549;
+  color: #a5d549;
+}
+.single-wc-content:hover .wc-icon{
+  background-color: #a5d549;
+}
+.single-wc-content:hover .wc-tittle{
+  border-bottom: 2px solid #a5d549;  
+}
+.about-left {
+  background-color: #a5d549;  
+}
+.button-default {  
+  border: 2px solid #a5d549 !important;
+  color: #a5d549 !important;
+}
+.button-default:hover {
+  border-color: #a5d549;
+}
+.button-default:hover,
+.button-default:focus {
+  border-color: #a5d549;
+  background-color: #a5d549 !important;  
+}
+.introduction-btn {
+  background-color: rgba(165, 213, 73, 0.8);
+}
+.team-info {
+  background: rgba(165, 213, 73, 0.8);
+}  
+.team-grid li:hover .team-address p {
+  color: #a5d549;
+}
+.single-service {
+  border-bottom: 5px solid #a5d549;
+}
+.single-service:hover:after{  
+  background-color: #a5d549;
+}
+.single-service:hover .service-icon{
+  color: #a5d549;
+}
+.single-service:hover .service-title{
+  color: #a5d549;
+}
+.single-counter > span {
+  color: #a5d549;
+}
+.single-price .price-header {
+  background-color: #a5d549;
+ }
+ .single-price .price-header::after {
+  color: #a5d549;  
+}
+.single-price .price-amount {
+  border-bottom: 1px solid #a5d549;
+  color: #a5d549;  
+}
+.single-price a {
+  border-bottom: 1px solid #a5d549;
+}
+.standard-price a{
+  background-color: #a5d549;  
+}
+.single-from-blog .blog-title h2 a:hover,
+.single-from-blog .blog-title h2 a:focus{
+  color: #a5d549; 
+}
+.single-from-blog .blog-title .blog-admin{
+  color: #a5d549;
+}
+.single-from-blog .blog-footer a:hover,
+.single-from-blog .blog-footer a:focus { 
+  color: #a5d549;
+}
+.contact-form .form-control:focus {
+  border-color: #a5d549;   
+} 
+.portfolio-menu ul li:hover{
+  color: #a5d549;
+  border-color: #a5d549;  
+}
+.portfolio-social-icon a {
+  background-color: #a5d549;
+}
+.portfolio-title {
+  background-color: #a5d549;
+}
+.blog-banner-area .breadcrumb li.active{
+  color: #a5d549;
+}
+.blog-pagination > li > a:hover,
+.blog-pagination > li > span:hover,
+.blog-pagination > li > a:focus,
+.blog-pagination > li > span:focus{
+  background-color: #a5d549;  
+  border-color:#a5d549;  
+}
+.single-widget h2 {
+  border-left: 3px solid #a5d549;  
+}
+.popular-post-widget .media-heading a:hover,
+.popular-post-widget .media-heading a:focus{
+  color: #a5d549;  
+}
+.instagram-feed .slick-prev::before,
+.instagram-feed .slick-next::before {
+  color: #a5d549;  
+}
+.instagram-feed .slick-dots li.slick-active button{
+  background-color: #a5d549;
+}
+.instagram-feed .slick-dots li.slick-active button::before{
+  color: #a5d549
+}
+.comment-form .form-control:focus {
+  border-color: #a5d549;   
+} 
+.error-no {
+  border: 2px solid #a5d549;  
+}
+.error-no p {
+  color: #a5d549;
+}
+.blog-details-content>a:hover{
+  color: #a5d549;
+}
+.scrollToTop {  
+  color: #a5d549;  
+}
+.scrollToTop:hover,
+.scrollToTop:focus{  
+  background-color: #a5d549; 
+}
+.loader {  
+  background: #a5d549;
+  background: -moz-linear-gradient(left, #a5d549 10%, rgba(255, 255, 255, 0) 42%);
+  background: -webkit-linear-gradient(left, #a5d549 10%, rgba(255, 255, 255, 0) 42%);
+  background: -o-linear-gradient(left, #a5d549 10%, rgba(255, 255, 255, 0) 42%);
+  background: -ms-linear-gradient(left, #a5d549 10%, rgba(255, 255, 255, 0) 42%);
+  background: linear-gradient(to right, #a5d549 10%, rgba(255, 255, 255, 0) 42%);  
+}
+.loader:before {
+  background: #a5d549; 
+}
+.footer-bottom p a{
+  color: #a5d549;
+}
+.blog-pagination > li > a,
+.blog-pagination > li > span {
+  color: #a5d549; 
+}
+.blog-pagination > li > a:hover,
+.blog-pagination > li > span:hover,
+.blog-pagination > li > a:focus,
+.blog-pagination > li > span:focus{
+  background-color: #a5d549;  
+  border-color:#a5d549;
+}
+
+.testimonial-parg:after{ 
+  color: #a5d549;
+}
+
+/*=======================================
+Template Design By MarkUps.
+Author URI : http://www.markups.io/
+========================================*/
