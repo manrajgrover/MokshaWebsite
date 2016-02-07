@@ -6,10 +6,10 @@ This directory will contain the static website. We plan to use Parallax theme fo
 
 Current Volunteers:
 
-1. Anshul Khanna
+1. [Anshul Khanna](https://github.com/anshul17khanna)
 2. Manav
 3. Nithila
-4. Prabhakar Gupta
+4. [Prabhakar Gupta](https://github.com/prabhakar267)
 
 ## Moksha Main Website
 This directory will contain the dynamic website with Login, Registration and Event ID details.
