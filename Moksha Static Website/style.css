@@ -3026,3 +3026,12 @@ img{
 		height: 350px;
 	}
 }
+
+
+/* Custom CSS */
+#sponsorsHeading{
+	width: 106px;
+	margin-left: auto;
+	margin-right: auto;
+	font-weight: bold;
+}
