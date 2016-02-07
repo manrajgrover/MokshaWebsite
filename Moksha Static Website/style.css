@@ -1681,8 +1681,11 @@ img{
 }
 .footer-bottom p{
 	color: #fff;
-	font-size: 12px;
+	font-size: 14px;
 	margin-bottom: 0px;
+	font-weight: 900;
+	text-align: right;
+	padding-right: 10px;
 }
 
 
