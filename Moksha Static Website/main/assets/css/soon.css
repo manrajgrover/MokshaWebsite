@@ -2,19 +2,11 @@
 MAIN STYLE
 *******************************************************************************************************************************/
 body {
-<<<<<<< HEAD
   background-color: #fff;
     font-family: "Lato";
     font-weight: 300;
     font-size: 16px;
     color: #fff;
-=======
-  background-color: #f2f2f2;
-    font-family: "Lato";
-    font-weight: 300;
-    font-size: 16px;
-    color: #555;
->>>>>>> f12375c2e23d507c09c74cd700be118cd0c97eb7
 
     -webkit-font-smoothing: antialiased;
     -webkit-overflow-scrolling: touch;
@@ -638,58 +630,4 @@ PLUGINS
        -moz-transition-duration: 0.4s;
             transition-duration: 0.4s;
 }
-<<<<<<< HEAD
 .tp-bullets.simplebullets.round .bullet.last {   margin-right:3px;}
-
-@media (max-width:600px){
-    .timer_box{
-    display: inline-block;
-    text-align: center;
-    width: 90%;
-    height: 100%;
-    border-radius: 50%;
-    border: 3px solid rgba(255, 255, 255, .6);
-}
-.timer_box h1{
-    font-size: 100%;
-    font-weight: 800;
-    margin-bottom: 0px;
-    font-family: "Lato","Helvetica Neue",Helvetica,Arial,sans-serif;
-    color: white;
-}
-.timer_box p{ margin-top: 0px;
-font-size: 12px;
-}
-}
-.col-xs-2 {
-    padding-right: 0;
-    padding-left: 0;
-}
-
-@media (max-width:450px){
-    .timer_box{
-    display: inline-block;
-    text-align: center;
-    width: 100%;
-    height: 100%;
-    border-radius: 50%;
-    border: 3px solid rgba(255, 255, 255, .6);
-}
-.timer_box h1{
-    font-size: 100%;
-    font-weight: 700;
-    margin-bottom: 0px;
-    font-family: "Lato","Helvetica Neue",Helvetica,Arial,sans-serif;
-    color: white;
-}
-.timer_box p{ margin-top: 0px;
-font-size: 10px;
-}
-}
-.col-xs-2 {
-    padding-right: 0;
-    padding-left: 0;
-}
-=======
-.tp-bullets.simplebullets.round .bullet.last {   margin-right:3px;}
->>>>>>> f12375c2e23d507c09c74cd700be118cd0c97eb7
