@@ -265,6 +265,11 @@ img{
 
 }
 
+#header img#main-logo{
+	height: 20%;
+	width: 20%;
+}
+
 /*--------------------*/
 /* MENU */
 /*--------------------*/
@@ -1174,7 +1179,7 @@ img{
 }
 .single-price .price-header::after {
 	bottom: -30%;
-	content: "";
+	content: "Ã¯ÂÂ";
 	font-family: fontAwesome;
 	font-size: 32px;
 	left: 46.5%;
@@ -1280,7 +1285,7 @@ img{
 }
 .single-slide > p::after {
 	color: #fff;
-	content: "";
+	content: "Ã¯ÂÂ";
 	font-family: fontAwesome;
 	font-size: 50px;
 	left: -44px;
@@ -1313,7 +1318,7 @@ img{
 	border: 1px solid #fff;
 	border-radius: 50%;
 	color: #fff;
-	content: "" !important;
+	content: "Ã¯ÂÂ" !important;
 	display: inline-block;
 	font-family: fontAwesome;
 	font-size: 35px;
@@ -1684,7 +1689,7 @@ img{
 	font-size: 14px;
 	margin-bottom: 0px;
 	font-weight: 900;
-	text-align: right;
+	text-align: center;
 	padding-right: 10px;
 }
 
@@ -1735,7 +1740,7 @@ img{
 }
 .blog-banner-area .breadcrumb > li + li::before {
 	color: #ccc;
-	content: "/ ";
+	content: "/ÃÂ ";
 	padding: 0 0px;
 }
 #blog{
@@ -3030,8 +3035,21 @@ img{
 
 /* Custom CSS */
 #sponsorsHeading{
-	width: 106px;
+	width: 150px;
 	margin-left: auto;
 	margin-right: auto;
 	font-weight: bold;
+}
+
+#sponslogos{
+	display:flex;
+	flex-flow:wrap;
+}
+
+.sponslogo{
+	min-width:10%;
+	margin-left:auto;
+	margin-right:auto;
+	margin-top:auto;
+	margin-bottom:auto;
 }
