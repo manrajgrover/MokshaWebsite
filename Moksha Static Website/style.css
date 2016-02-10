@@ -175,15 +175,20 @@ img{
 	float: left;
 	display: inline;
 	width: 100%;
+	
 }
 .header-inner{	
 	display: inline;
 	position: relative;
 	float: left;	
 	width: 100%;
+
+
 }
-.header-inner>img{
+.header-inner img{
 	width: 100%;
+
+
 }
 .header-overlay{
 	background-color: rgba(0, 0, 0, 0.6);
@@ -193,6 +198,7 @@ img{
 	top: 0;
 	width: 100%;
 	z-index: 10;
+
 }
 .header-content1 {
 	padding-top: 50px;
@@ -266,8 +272,8 @@ img{
 }
 
 #header img#main-logo{
-	height: 20%;
-	width: 20%;
+	height: 25%;
+	width: 25%;
 }
 
 /*--------------------*/
@@ -2987,6 +2993,15 @@ img{
 	
 }
 
+@media (min-width:1000px){
+	.header-inner, .header-overlay{
+		height: 100%;
+	}
+	#bckimg{
+		height: 100%;
+	}
+}
+
 @media (max-width:1000px){
 	.header-inner, .header-overlay{
 		height: 620px;
@@ -3046,10 +3061,51 @@ img{
 	flex-flow:wrap;
 }
 
-.sponslogo{
-	min-width:10%;
+.sponsDiv{
 	margin-left:auto;
 	margin-right:auto;
 	margin-top:auto;
 	margin-bottom:auto;
+}
+
+.sponslogo{
+	margin-left:auto;
+	margin-right:auto;
+}
+
+@media(min-width:700px)
+	{
+		.sponsDiv{
+			min-width:15em;
+		}
+	}
+
+@media(max-width:700px)
+{
+	.sponsDiv{
+		min-width:30%;
+	}
+}
+
+@media (max-width:450px)
+{
+	.sponsDiv{
+		min-width:40%;
+	}
+}
+
+div.im-checkout a.im-powered-link{
+	display:none;
+}
+
+footer#footer div.footer-top div.container a.im-checkout-btn{
+	border:1px solid grey;
+	background:black;
+	color:white;
+}
+
+footer#footer div.footer-top div.container a.im-checkout-btn:hover{
+	border:1px solid green;
+	background:green;
+	color:white;
 }
