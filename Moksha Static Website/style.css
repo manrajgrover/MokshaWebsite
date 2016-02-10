@@ -37,7 +37,8 @@ body,html{
   	overflow-x:hidden;
 }
 body {
-	font-family: 'Open Sans', sans-serif;
+	/*font-family: 'Open Sans', sans-serif;*/
+	font-family: 'Jura', sans-serif;
 	font-size: 16px;
 	overflow-x: hidden !important;
 	color: #838282;
@@ -56,7 +57,8 @@ a:focus{
 	text-decoration: none;
 }
 h1,h2,h3,h4,h5,h6{
-	font-family: 'Raleway', sans-serif;
+/*	font-family: 'Raleway', sans-serif;*/
+	font-family: 'Jura', sans-serif;
 }
 h2 {
 	color: #fff;  
@@ -167,7 +169,8 @@ img{
 	color: #fff;	
 	font-size: 20px;	
 	font-weight: bold;
-	font-family: 'Raleway', sans-serif;
+	/*font-family: 'Raleway', sans-serif;*/
+	font-family: 'Jura', sans-serif;
 	text-transform: uppercase;
 	padding: 25px 28px;
 	-webkit-transition: all 0.5s;
@@ -182,7 +185,8 @@ img{
 	color: #fff;
 	font-size: 20px;
 	font-weight: bold;
-	font-family: 'Raleway', sans-serif;
+	/*font-family: 'Raleway', sans-serif;*/
+	font-family: 'Jura', sans-serif;
 	text-transform: uppercase;
 	padding: 25px 28px;
 	-webkit-transition: all 0.5s;
@@ -491,7 +495,8 @@ img{
 }
 .about-right p {
 	color: #535353;
-	font-family: "Raleway",sans-serif;
+	/*font-family: "Raleway",sans-serif;*/
+	font-family: 'Jura', sans-serif;
 	margin-bottom: 32px;
 }
 .about-btn-area{
@@ -753,7 +758,8 @@ img{
 	font-size: 22px;
 	font-weight: 600;
 	text-transform: uppercase;
-	font-family: "Raleway",sans-serif;
+	/*font-family: "Raleway",sans-serif;*/
+	font-family: 'Jura', sans-serif;
 	-webkit-transition: all 0.5s;
 	-moz-transition: all 0.5s;
 	-ms-transition: all 0.5s;
@@ -765,7 +771,8 @@ img{
 	color: #777777;
 	font-size: 17px;
 	font-style: italic;
-	font-family: "Raleway",sans-serif;
+	/*font-family: "Raleway",sans-serif;*/
+	font-family: 'Jura', sans-serif;
 }
 
 /*--------------------*/
@@ -880,7 +887,8 @@ img{
 	border-top: 1px solid #fff;
 	cursor: pointer;
 	display: inline-block;
-	font-family: "Raleway",sans-serif;
+	/*font-family: "Raleway",sans-serif;*/
+	font-family: 'Jura', sans-serif;
 	font-size: 14px;
 	font-weight: bold;
 	margin: 0 13px;
@@ -1003,7 +1011,8 @@ img{
 .portfolio-title span{
 	color: #fff7f7;
 	font-size: 12px;
-	font-family: "Raleway",sans-serif;
+	/*font-family: "Raleway",sans-serif;*/
+	font-family: 'Jura', sans-serif;
 }
 
 /*--------------------*/
@@ -1213,7 +1222,8 @@ img{
 }
 .single-slide > p {
 	color: #fff;
-	font-family: "Raleway",sans-serif;
+	/*font-family: "Raleway",sans-serif;*/
+	font-family: 'Jura', sans-serif;
 	font-size: 18px;
 	line-height: 35px;
 	margin-top: 55px;
@@ -1666,12 +1676,14 @@ img{
 	padding-left: 0;
 }
 .blog-banner-area .breadcrumb li{
-	font-family: "Raleway",sans-serif;
+	/*font-family: "Raleway",sans-serif;*/
+	font-family: 'Jura', sans-serif;
 }
 .blog-banner-area .breadcrumb li a {
 	color: #fff;
 	font-size: 18px;
-	font-family: "Raleway",sans-serif;
+	/*font-family: "Raleway",sans-serif;*/
+	font-family: 'Jura', sans-serif;
 	text-decoration: none;
 }
 .blog-banner-area .breadcrumb > li + li::before {
@@ -3038,4 +3050,12 @@ footer#footer div.footer-top div.container a.im-checkout-btn:hover{
 	border:1px solid green;
 	background:green;
 	color:white;
+}
+
+body,#dayss,#minutess,#secondss,#hourss{
+	font-family: 'Jura', sans-serif;
+}
+
+div{
+	font-family: Verdana, serif;
 }
