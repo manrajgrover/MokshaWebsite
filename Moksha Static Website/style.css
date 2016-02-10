@@ -3056,6 +3056,15 @@ body,#dayss,#minutess,#secondss,#hourss{
 	font-family: 'Jura', sans-serif;
 }
 
+@font-face{
+	font-family:'Seven Segment';
+	src:url('assets/fonts/DSEG7Classic-Regular.ttf');
+}
+
+#dayss h1,#minutess h1,#secondss h1,#hourss h1{
+	font-family: 'Seven Segment', sans-serif;
+}
+
 div{
 	font-family: Verdana, serif;
 }
