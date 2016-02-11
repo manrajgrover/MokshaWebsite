@@ -2995,6 +2995,7 @@ img{
 	width: 150px;
 	margin-left: auto;
 	margin-right: auto;
+	margin-bottom:5%;
 	font-weight: bold;
 }
 
@@ -3066,5 +3067,5 @@ body,#dayss,#minutess,#secondss,#hourss{
 }
 
 div{
-	font-family: Verdana, serif;
+	font-family: 'Jura', serif;
 }
