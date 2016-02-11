@@ -16,10 +16,9 @@
 	7. MENU SMOOTH SCROLLING
 	8. MIXIT FILTER ( FOR PORTFOLIO )  
 	9. FANCYBOX ( FOR PORTFOLIO POPUP VIEW ) 
-	10. MOBILE MENU CLOSE 
-	11. PRELOADER 
-	12. INSTAGRAM SLIDER (SLICK SLIDER)
-	13. WOW ANIMATION 	
+	10. MOBILE MENU CLOSE  
+	11. INSTAGRAM SLIDER (SLICK SLIDER)
+	12. WOW ANIMATION 	
 	
 **/
 
@@ -229,18 +228,8 @@ jQuery(function($){
 	  $('.in').collapse('hide');
 	});
 
-	/* ----------------------------------------------------------- */
-	/*  11. PRELOADER 
-	/* ----------------------------------------------------------- */ 
-
-	jQuery(window).load(function() { // makes sure the whole site is loaded
-      $('.loader').fadeOut(); // will first fade out the loading animation
-      $('#preloader').delay(100).fadeOut('slow'); // will fade out the white DIV that covers the website.
-      $('body').delay(100).css({'overflow':'visible'});
-    })
-
     /* ----------------------------------------------------------- */
-	/*  12. INSTAGRAM SLIDER (SLICK SLIDER)
+	/*  11. INSTAGRAM SLIDER (SLICK SLIDER)
 	/* ----------------------------------------------------------- */ 
 
 	jQuery('.instagram-feed').slick({
@@ -255,7 +244,7 @@ jQuery(function($){
 	});
 
 	/* ----------------------------------------------------------- */
-	/*  13. WOW ANIMATION
+	/*  12. WOW ANIMATION
 	/* ----------------------------------------------------------- */ 
 
 	wow = new WOW(
