@@ -17,3 +17,16 @@
 {
   width:90px;
 }
+.col-md-2.event-block
+{
+  height:500px;
+  background-color:red;
+  color:#FFF;
+  font-size:12px;
+}
+.col-md-1.block-connector
+{
+  height:500px;
+  background-color:blue;
+  display:relative;
+}
