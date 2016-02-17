@@ -2,33 +2,41 @@
 <html>
 	<head>
 		<title>Competitions | Moksha'16</title>
+		<link rel="stylesheet" href="assets/css/theme.css">
+		<link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+		<script src="bower_components/jquery/dist/jquery.min.js"></script>
+		<script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
 	</head>
 
 	<body>
-		<header>
-			<div id="top">
-				<div id="logo">
-					<img src="assets/images/moksha_logo.png" alt="Moksha Logo"/>
-				</div>
-				<nav>
-					<ul>
-						<li>Home</li>
-						<li>Events</li>
-						<li>Competitions</li>
-						<li>Sponsors</li>
-					</ul>
-				</nav>
-				<div id="login profile">
-					Login
-				</div>
-			</div>
+			<nav class="navbar navbar-default">
+        <div class="container-fluid"> <!-- Brand and toggle get grouped for better mobile display -->
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#"><img src="assets/images/moksha_logo.png" alt="Moksha Logo"/></a>
+          </div>
+          <!-- Collect the nav links, forms, and other content for toggling -->
+          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav">
+              <li class="active"><a href="#">Home <span class="sr-only">(current)</span></a></li>
+              <li><a href="#">Events</a></li>
+							<li><a href="#">Competitions</a></li>
+							<li><a href="#">Sponsors</a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+              <li><a href="#">Login</a></li>
+            </ul>
+          </div><!-- /.navbar-collapse -->
+        </div><!-- /.container-fluid -->
+      </nav>
 
-			<div id="title">
-				<h2>Competitions</h2>
-			</div>
-    	</header>
-
-		<div class="content">
+			
+      <div class="content">
 			<section class="music event">
 				<header><h3>Music</h3></header>
 
@@ -44,7 +52,7 @@
 
 			<section class="drama event">
 				<header><h3>Drama</h3></header>
-						
+
 				<div class="section-desc">
 					<p>Lorem Ipsum is simply a dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a specimen book. It has survived not only five centuries, but also the leap into electronic typesetting remaining essentially unchanged</p>
 					<ul>
@@ -53,13 +61,13 @@
 						<li class="event_item">-Best Dramebaz</li>
 						<li class="event_item">-Mad ad</li>
 					</ul>
-				</div>	
+				</div>
 				<img class="pokemon" src="assets/images/oshowatt.png" alt="Oshowatt"/>
 			</section>
 
 			<section class="dance event">
 				<header><h3>Dance</h3></header>
-				
+
 				<div class="section-desc">
 					<p>Lorem Ipsum is simply a dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a specimen book. It has survived not only five centuries, but also the leap into electronic typesetting remaining essentially unchanged</p>
 					<ul>
@@ -71,10 +79,10 @@
 				</div>
 				<img class="pokemon" src="assets/images/togepi.png" alt="Togepi"/>
 			</section>
-			
+
 			<section class="informals event">
 				<header><h3>Informals</h3></header>
-		
+
 				<div class="section-desc">
 					<p>Lorem Ipsum is simply a dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a specimen book. It has survived not only five centuries, but also the leap into electronic typesetting remaining essentially unchanged</p>
 					<ul>
@@ -84,8 +92,8 @@
 					<p><b>More...</b></p>
 				</div>
 				<img class="pokemon" src="assets/images/snorlax.png" alt="Snorlax"/>
-			</section>	
+			</section>
 		</div>
-		
+
 	</body>
 </html>
