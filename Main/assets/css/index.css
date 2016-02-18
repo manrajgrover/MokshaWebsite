@@ -1,6 +1,6 @@
 @font-face{
 	font-family: Mathlete;
-	src: url(assets/fonts/Mathlete-Skinny.otf);
+	src: url(../fonts/Mathlete-Skinny.otf);
 }
 
 *{
@@ -9,7 +9,7 @@
 }
 
 body{
-    background:url('assets/images/bg.png');
+    background:url('../images/bg.png');
     /*padding-bottom:15vh;*/
 }
 
@@ -61,7 +61,7 @@ nav li{
     top:40%;
     transform:translateY(-50%);
     right: 10vw;
-    
+
 }
 
 .title{
@@ -77,7 +77,7 @@ nav li{
     font-family: "Mathlete";
     font-size: 2.5em;
     font-weight: bold;
-    background: url('assets/images/title_bg.png');
+    background: url('../images/title_bg.png');
     background-size: 100% 100%;
     margin: 0 auto;
     padding: 10px 0;
@@ -134,28 +134,28 @@ nav li{
 	width: 110px;
 	margin-top: 45%;
 	margin-left: 20%;
-} 
+}
 
  .content .event .pokemon[alt="oshowatt"]{
 	height :120px;
 	width: 110px;
 	margin-top: 20%;
 	margin-left: 20%;
-} 
+}
 
  .content .event .pokemon[alt="togepi"]{
 	height :100px;
 	width: 90px;
 	margin-top: 30%;
 	margin-left: 20%;
-} 
+}
 
  .content .event .pokemon[alt="snorlax"]{
 	height :130px;
 	width: 160px;
 	margin-top: 25%;
 	margin-left: 10%;
-} 
+}
 
 .content .border{
 	padding: 0;
@@ -163,6 +163,6 @@ nav li{
 	display: inline-block;
 	height: 100%;
 	width: 70%;
-	background: url('assets/images/border.png');
+	background: url('../images/border.png');
 	background-size: 100% 100%;
 }
