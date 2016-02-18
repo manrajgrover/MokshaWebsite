@@ -1,0 +1,42 @@
+/****************************************************
+                      theme.css
+****************************************************/
+.navbar.navbar-default
+{
+  height:60px;
+}
+.navbar-nav>li
+{
+  margin-top:4px;
+}
+.navbar-brand
+{
+  padding:1px 15px 1px 15px!important;
+}
+.navbar-brand>img
+{
+  width:90px;
+}
+.col-md-2.event-block
+{
+  height:500px;
+  background-color:red;
+  color:#FFF;
+  font-size:12px;
+}
+.col-md-1.block-connector
+{
+  height:500px;
+  background-color:blue;
+  background: url('../images/border.png');
+  background-size: 100% 100%;
+  display:relative;
+}
+
+@media(max-width:800px)
+{
+	div.block-connector
+	{
+		background: url('../images/title_bg.png');
+	}
+}
