@@ -1,0 +1,168 @@
+@font-face{
+	font-family: Mathlete;
+	src: url(../fonts/Mathlete-Skinny.otf);
+}
+
+*{
+	margin: 0 auto;
+	padding: 0;
+}
+
+body{
+    background:url('../images/bg.png');
+    /*padding-bottom:15vh;*/
+}
+
+/*HEADER*/
+#top{
+    font-family:'Sans serif';
+    font-size:large;
+	text-transform: uppercase;
+	position: relative;
+	margin:0;
+	/*padding: 4px 1px 2px 1px;*/
+	background-color:white;
+	display:flex;
+}
+
+img{
+    display:inline;
+    height: 50px;
+    margin: 10px 40px;
+    /*width: 80px;*/
+}
+
+nav{
+  /*padding-left:3vw;*/
+	margin: 0;
+	margin-top: -10px;
+	display: flex;
+	flex-direction:column;
+	justify-content:center;
+}
+
+nav ul{
+    display: flex;
+    flex-flow: row;
+}
+
+nav li{
+	 display: block;
+	 font-family: "Mathlete";
+	 font-size: 2em;
+	 padding-left:10%;
+    list-style-type: none;
+}
+
+.login{
+    position: absolute;
+    font-family: "Mathlete";
+    font-size: 2em;
+    top:40%;
+    transform:translateY(-50%);
+    right: 10vw;
+
+}
+
+.title{
+    background: transparent;
+    text-align: center;
+    /*font-family: "Mathlete";*/
+    /*font-size: 2em;*/
+}
+
+
+.title h2{
+    width:20%;
+    font-family: "Mathlete";
+    font-size: 2.5em;
+    font-weight: bold;
+    background: url('../images/title_bg.png');
+    background-size: 100% 100%;
+    margin: 0 auto;
+    padding: 10px 0;
+    margin-bottom:20px;
+}
+
+.content{
+	width: 80%;
+	height: 500px;
+	/*background-color: tomato;*/
+	margin-top: 30px;
+	padding: 0;
+	display: flex;
+	/*overflow: auto;*/
+}
+
+.content .event{
+	padding: 20px;
+	background-color: white;
+	/*margin-right: 30px;*/
+	font-size: .8em;
+	position: relative;
+}
+
+.content .event h1{
+	margin-bottom: 10px;
+	font-family: "Mathlete";
+	font-size: 3em;
+}
+
+.content .event p{
+	margin-bottom: 10px;
+}
+
+.content .event ul{
+	list-style: none;
+	font-weight: bold;
+}
+
+.content .event .arrow{
+	width: 20px;
+	height: 25px;
+	position: absolute;
+	bottom: 80px;
+	right: -20px;
+}
+
+.content .event .pokemon{
+	margin: 0;
+}
+
+ .content .event .pokemon[alt="jigglypuff"]{
+	height :100px;
+	width: 110px;
+	margin-top: 45%;
+	margin-left: 20%;
+}
+
+ .content .event .pokemon[alt="oshowatt"]{
+	height :120px;
+	width: 110px;
+	margin-top: 20%;
+	margin-left: 20%;
+}
+
+ .content .event .pokemon[alt="togepi"]{
+	height :100px;
+	width: 90px;
+	margin-top: 30%;
+	margin-left: 20%;
+}
+
+ .content .event .pokemon[alt="snorlax"]{
+	height :130px;
+	width: 160px;
+	margin-top: 25%;
+	margin-left: 10%;
+}
+
+.content .border{
+	padding: 0;
+	margin: 0;
+	display: inline-block;
+	height: 100%;
+	width: 70%;
+	background: url('../images/border.png');
+	background-size: 100% 100%;
+}

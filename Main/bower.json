@@ -2,8 +2,9 @@
   "name": "Moksha'16",
   "homepage": "https://github.com/mbad0la/MokshaWebsite",
   "authors": [
-    "\"Mayank Badola <mbad0la@outlook.com> (mbad0la.github.io)\"",
-    "\"Shubham Kumaram <krm.shubham@gmail.com>\""
+    "Mayank Badola <mbad0la@outlook.com> (mbad0la.github.io)",
+    "Shubham Kumaram <krm.shubham@gmail.com>",
+    "Samarth Chugh <> ()"
   ],
   "description": "NSIT's cultural festival website.",
   "main": "",
