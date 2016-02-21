@@ -297,8 +297,11 @@ h1, h2, h3{
 				RESPONSIVENESS
 *******************************************************
 */
-@media(max-width:800px)
+@media only screen and (max-device-width:800px)
 {
+	body{
+		font-size:large;
+	}
 	.content{
 		display:flex;
 		flex-flow:column;
@@ -336,11 +339,12 @@ h1, h2, h3{
 	
 	#logo{
 		width: 20%;
+		height:100%;
 	}
 	#top{
 		display:flex;
 		flex-flow:column;
-		height:100%;
+		min-height:10vh;
 	}
 	
 	#panel{
@@ -359,19 +363,25 @@ h1, h2, h3{
 	}
 	
 	nav ul li{
-		margin-left: 0;
-		width: 100%;
+		position:relative;
+		padding:0;
+		margin: 0;
+		width: 95%;
+		padding-left:5%;
+		font-size:5vh;
+		min-height:8vh;
 	}
 	
 	#toggle{
 		position:absolute;
-		top:10px;
+		top:2vh;
 		display:block;
 		
-		height:50px;
-		width:50px;
+		width: 10vw;
+		height:6vh;
 		transform: rotate(90deg);
-		right:10vw;
+		font-size:5vw;
+		right:8vw;
 	}
 	
 	.login{
@@ -380,9 +390,43 @@ h1, h2, h3{
 		margin-left: 10px;
 		left: 0;
 		top:0;
+		font-size:5vh;
+		min-height:8vh;
 	}
 	
 	.title>h2{
 		width: 80%;
+		font-size:7vh;
 	}
+	
+	.content .event>h1{
+		font-size:7vh;
+	}
+	
+	p{
+		padding:5%;
+		font-size:3vh;
+	}
+	
+	div li{
+		font-size:3vh;
+		padding-left:5%;
+	}
+	
+	.pokemon{
+		min-width:50vw;
+		min-height:50vh;
+	}
+	
+	section header h3{
+		font-size:7vh;
+	}
+	
+	#event-category-page .pokemon, .small-event-pic{
+		min-width:30vw;
+		min-height:30vh;
+	}
+	
+	.register-btn{
+		font-size:7vh;
 }
