@@ -76,8 +76,6 @@ nav li{
 .title{
     background: transparent;
     text-align: center;
-    /*font-family: "Mathlete";*/
-    /*font-size: 2em;*/
 }
 
 
@@ -114,11 +112,11 @@ nav li{
 	display: flex;
 	margin-left: auto;
 	margin-right: auto;
-	/*overflow: auto;*/
 }
 
 .content .event{
-	padding: 20px;
+	padding: 1%;
+	width:20%;
 	background-color: white;
 	/*margin-right: 30px;*/
 	font-size: .8em;
@@ -153,19 +151,16 @@ nav li{
 }
 
  .content .event .pokemon[alt="jigglypuff"]{
-	height :20%;
-	width: 60%;
-	//margin-top: 45%;
-	//margin-left: 20%;
-	position: relative;
-	bottom: -80px;
-	left: 20%;
+	height :100px;
+	width: 110px;
+	margin-top: 35%;
+	margin-left: 20%;
 }
 
  .content .event .pokemon[alt="oshowatt"]{
-	height :25%;
-	width: 60%;
-	margin-top: 20%;
+	height :120px;
+	width: 110px;
+	margin-top: 10%;
 	margin-left: 20%;
 }
 
@@ -173,13 +168,16 @@ nav li{
 	height : 20%;
 	width: 50%;
 	margin-top: 30%;
+	height :100px;
+	width: 90px;
+	margin-top: 20%;
 	margin-left: 20%;
 }
 
  .content .event .pokemon[alt="snorlax"]{
-	height : 28%;
-	width: 85%;
-	margin-top: 25%;
+	height :130px;
+	width: 160px;
+	margin-top: 15%;
 	margin-left: 10%;
 }
 
@@ -187,8 +185,8 @@ nav li{
 	padding: 0;
 	margin: 0;
 	display: inline-block;
-	height: 500px;
-	width: 70%;
+	height: 100%;
+	width: 4%;
 	background: url('../images/border.png');
 	background-size: 100% 100%;
 }
@@ -305,6 +303,12 @@ h1, h2, h3{
 		display:flex;
 		flex-flow:column;
 	}
+	
+	.content .event
+	{
+		width:98%;
+	}
+
 	
 	#competitions-page>.border{
 		display: none;
