@@ -48,6 +48,9 @@ nav{
 nav ul{
     display: flex;
     flex-flow: row;
+	position: absolute;
+    top:40%;
+    transform:translateY(-50%);
 }
 
 nav li{
@@ -63,12 +66,11 @@ nav li{
     position: absolute;
     font-family: "Mathlete";
     font-size: 2em;
-		padding-left:2.5%;
-		padding-right:2.5%;
+	padding-left:2.5%;
+	padding-right:2.5%;
     top:40%;
     transform:translateY(-50%);
-    right: 10vw;
-
+    right:10vw;
 }
 
 .title{
@@ -91,7 +93,13 @@ nav li{
     margin-bottom:20px;
 }
 
+#toggle{
+	display:none;
+}
 
+#panel{
+	margin:0;
+}
 /*
 *********************************************************
 				COMPETITIONS
@@ -321,4 +329,56 @@ h1, h2, h3{
         margin-left: auto;
         margin-right: auto;
     }
+	
+	#logo{
+		width: 20%;
+	}
+	#top{
+		display:flex;
+		flex-flow:column;
+		height:100%;
+	}
+	
+	#panel{
+		display: none;
+	}
+	
+	#panel nav ul{
+		position:relative;
+		display:flex;
+		flex-flow:column;
+		margin-left: 0;
+		transform:unset;
+		width:100%;
+		border-top:1px solid grey;
+		border-bottom:1px solid grey;
+	}
+	
+	nav ul li{
+		margin-left: 0;
+		width: 100%;
+	}
+	
+	#toggle{
+		position:absolute;
+		top:10px;
+		display:block;
+		
+		height:50px;
+		width:50px;
+		transform: rotate(90deg);
+		right:10vw;
+	}
+	
+	.login{
+		position: relative;
+		transform: unset;
+		margin-left: 10px;
+		left: 0;
+		top:0;
+	}
+	
+	.title>h2{
+		width: 80%;
+	}
 }

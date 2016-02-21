@@ -5,25 +5,29 @@
 	<link rel="stylesheet" href="assets/css/index.css">
 	<link rel="stylesheet" href="assets/css/decorations.css">
 	<link rel="stylesheet" href="assets/css/master.css">
-	
-	<script src="assets/js/nav.js"></script>
+	<script src="bower_components/jquery/dist/jquery.min.js"></script>
+	<script src="assets/js/responsive.js"></script>
 </head>
 <body>
 
 	<header>
 		<div id="top">
-			<img src="assets/images/moksha_logo.png" alt="Moksha Logo"/>
-			<nav>
-				<ul>
-					<li>Home</li>
-					<li>Events</li>
-					<li>Competitions</li>
-					<li>Sponsors</li>
-				</ul>
-		</nav>
-			<div class="login profile">
-				Login
-		</div>
+			<img id="logo" src="assets/images/moksha_logo.png" alt="Moksha Logo"/>
+			
+			<button id="toggle" >|||</button>
+			<div id="panel">
+				<nav>
+					<ul>
+						<li>Home</li>
+						<li>Events</li>
+						<li>Competitions</li>
+						<li>Sponsors</li>
+					</ul>
+				</nav>
+				<div class="login profile">
+					Login
+				</div>
+			</div>
 		</div>
 
 		<div class="title">
