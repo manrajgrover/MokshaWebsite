@@ -91,13 +91,20 @@ nav li{
 	margin-top: 30px;
 	padding: 0;
 	display: flex;
+<<<<<<< HEAD
 	flex-wrap:wrap;
+=======
+>>>>>>> 06ca42bd5b106f4c9e741c3b8324a5dd12988277
 	/*overflow: auto;*/
 }
 
 .content .event{
+<<<<<<< HEAD
 	padding: 1%;
 	width:20%;
+=======
+	padding: 20px;
+>>>>>>> 06ca42bd5b106f4c9e741c3b8324a5dd12988277
 	background-color: white;
 	/*margin-right: 30px;*/
 	font-size: .8em;
@@ -134,28 +141,44 @@ nav li{
  .content .event .pokemon[alt="jigglypuff"]{
 	height :100px;
 	width: 110px;
+<<<<<<< HEAD
 	margin-top: 35%;
+=======
+	margin-top: 45%;
+>>>>>>> 06ca42bd5b106f4c9e741c3b8324a5dd12988277
 	margin-left: 20%;
 }
 
  .content .event .pokemon[alt="oshowatt"]{
 	height :120px;
 	width: 110px;
+<<<<<<< HEAD
 	margin-top: 10%;
+=======
+	margin-top: 20%;
+>>>>>>> 06ca42bd5b106f4c9e741c3b8324a5dd12988277
 	margin-left: 20%;
 }
 
  .content .event .pokemon[alt="togepi"]{
 	height :100px;
 	width: 90px;
+<<<<<<< HEAD
 	margin-top: 20%;
+=======
+	margin-top: 30%;
+>>>>>>> 06ca42bd5b106f4c9e741c3b8324a5dd12988277
 	margin-left: 20%;
 }
 
  .content .event .pokemon[alt="snorlax"]{
 	height :130px;
 	width: 160px;
+<<<<<<< HEAD
 	margin-top: 15%;
+=======
+	margin-top: 25%;
+>>>>>>> 06ca42bd5b106f4c9e741c3b8324a5dd12988277
 	margin-left: 10%;
 }
 
@@ -164,6 +187,7 @@ nav li{
 	margin: 0;
 	display: inline-block;
 	height: 100%;
+<<<<<<< HEAD
 	width: 4%;
 	background: url('../images/border.png');
 	background-size: 100% 100%;
@@ -180,3 +204,9 @@ nav li{
 		display:none;
 	}
 }
+=======
+	width: 70%;
+	background: url('../images/border.png');
+	background-size: 100% 100%;
+}
+>>>>>>> 06ca42bd5b106f4c9e741c3b8324a5dd12988277
