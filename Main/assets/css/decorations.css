@@ -1,5 +1,11 @@
 nav li:hover, .login:hover{
 	/*color:#F0FD0C;*/
-	background-color:#B3E5FC;
-	font-weight:bold;
+	/*background-color:#B3E5FC;*/
+	cursor: pointer;
+	/*font-weight:bold;*/
+	color: #B3E5FC;
+}
+
+nav li, .login{
+	-webkit-transition: all .3s;
 }
