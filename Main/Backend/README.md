@@ -17,3 +17,15 @@ Table - users
 6. email
 
 7. active
+
+### Testing
+
+#### For Login
+
+Create a dummy in database and set active = 1
+
+It can be logged in
+
+#### For Registration
+
+Register normally through the link and verify in the databse. But it can't be 'logged in' since e-mail confirmation is in works for the time being.
