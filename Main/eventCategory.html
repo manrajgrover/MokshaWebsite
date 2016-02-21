@@ -2,14 +2,15 @@
 <html>
 	<head>
 		<title>Event Category | Moksha'16</title>
+		<link rel="stylesheet" href="assets/css/index.css">
+		<link rel="stylesheet" href="assets/css/event.css">
 	</head>
 
 	<body>
 		<header>
+
 			<div id="top">
-				<div id="logo">
-					<img src="assets/images/moksha_logo.png" alt="Moksha Logo"/>
-				</div>
+				<img id="moksha-logo" src="assets/images/moksha_logo.png" alt="Moksha Logo"/>
 				<nav>
 					<ul>
 						<li>Home</li>
@@ -18,26 +19,27 @@
 						<li>Sponsors</li>
 					</ul>
 				</nav>
-				<div id="login profile">
+
+				<div class="login profile">
 					Login
 				</div>
 			</div>
 
-			<div id="title">
+			<div class="title">
 				<h2>Competitions</h2>
 			</div>
     	</header>
     	
-    	<div id="content">
-    	
+    	<div class="event-content">
 	    	<div class="left-clickable-box">
     			<!-- Rotate it vis CSS -->
-    			<img src="assets/images/arrow.png" alt="arrow"></img>
+    			<img class="arrow" src="assets/images/arrow.png" alt="arrow"></img>
     		</div>
     		
-    		<section id="music" class="event">
+		<div class="content main-content">
+    		<section id="music" class="comp-category main-description event">
 				<header><h3>Music</h3></header>	
-				<div class="section-desc">
+				<div class="section-desc category">
 					<p>Lorem Ipsum is simply a dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a specimen book. It has survived not only five centuries, but also the leap into electronic typesetting remaining essentially unchanged</p>
 					<ul>
 						<li class="event_item">-Dhwani</li>
@@ -47,26 +49,29 @@
 				<img class="pokemon" src="assets/images/jigglypuff.png" alt="Jigglypuff"/>
 			</section>
 			
-			<section id="dhwani" class="comp-category event">
-				<header><h3>Dhwani</h3></header>
+			<section id="dhwani" class="comp-category blue main-description event">
+				<header>
+					<h3>Dhwani</h3>
+				</header>
 				<div class="section-desc">
 					<p>Lorem Ipsum is simply a dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a specimen book. It has survived not only five centuries, but also the leap into electronic typesetting remaining essentially unchanged</p>
 				</div>
 				<img class="small-event-pic" src="assets/images/dhwani.jpg" alt="dhwani"/>
 			</section>
 			
-			<section id="tnt" class="comp-category event">
+			<section id="tnt" class="comp-category blue main-description event">
 				<header><h3>TNT</h3></header>
-				<div class="section-desc">
+				<div class="section-desc category">
 					<p>Lorem Ipsum is simply a dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a specimen book. It has survived not only five centuries, but also the leap into electronic typesetting remaining essentially unchanged</p>
 				</div>
 				<img class="small-event-pic" src="assets/images/tnt.jpg" alt="TNT"/>
 			</section>
-			
-			<div class="right-clickable-box">
-    			<img src="assets/images/arrow.png" alt="arrow"></img>
-    		</div>
-    		
+		</div>
+		
+		<div class="right-clickable-box">
+    		<img class="arrow" src="assets/images/arrow.png" alt="arrow"></img>
     	</div>
-    </body>
-  </html>
+    		
+    </div>
+  </body>
+</html>
