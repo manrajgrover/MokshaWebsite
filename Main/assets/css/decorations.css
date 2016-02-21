@@ -1,0 +1,5 @@
+nav li:hover, .login:hover{
+	/*color:#F0FD0C;*/
+	background-color:#B3E5FC;
+	font-weight:bold;
+}

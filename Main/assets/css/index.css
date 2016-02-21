@@ -13,7 +13,11 @@ body{
     /*padding-bottom:15vh;*/
 }
 
-/*HEADER*/
+/*
+********************************************************
+					HEADER
+********************************************************
+*/
 #top{
     font-family:'Sans serif';
     font-size:large;
@@ -44,31 +48,34 @@ nav{
 nav ul{
     display: flex;
     flex-flow: row;
+	position: absolute;
+    top:40%;
+    transform:translateY(-50%);
 }
 
 nav li{
 	 display: block;
 	 font-family: "Mathlete";
 	 font-size: 2em;
-	 padding-left:10%;
-    list-style-type: none;
+	 padding-left:5%;
+	 padding-right: 5%;
+   list-style-type: none;
 }
 
 .login{
     position: absolute;
     font-family: "Mathlete";
     font-size: 2em;
+	padding-left:2.5%;
+	padding-right:2.5%;
     top:40%;
     transform:translateY(-50%);
-    right: 10vw;
-
+    right:10vw;
 }
 
 .title{
     background: transparent;
     text-align: center;
-    /*font-family: "Mathlete";*/
-    /*font-size: 2em;*/
 }
 
 
@@ -80,10 +87,22 @@ nav li{
     background: url('../images/title_bg.png');
     background-size: 100% 100%;
     margin: 0 auto;
-    padding: 10px 0;
+    padding: 0px 0;
     margin-bottom:20px;
 }
 
+#toggle{
+	display:none;
+}
+
+#panel{
+	margin:0;
+}
+/*
+*********************************************************
+				COMPETITIONS
+*********************************************************
+*/
 .content{
 	width: 80%;
 	height: 500px;
@@ -91,8 +110,8 @@ nav li{
 	margin-top: 30px;
 	padding: 0;
 	display: flex;
-	flex-wrap:wrap;
-	/*overflow: auto;*/
+	margin-left: auto;
+	margin-right: auto;
 }
 
 .content .event{
@@ -146,6 +165,9 @@ nav li{
 }
 
  .content .event .pokemon[alt="togepi"]{
+	height : 20%;
+	width: 50%;
+	margin-top: 30%;
 	height :100px;
 	width: 90px;
 	margin-top: 20%;
@@ -169,14 +191,242 @@ nav li{
 	background-size: 100% 100%;
 }
 
-@media screen and (max-width: 600px)
+/*
+**************************************************************
+						EVENTS
+**************************************************************
+*/
+.event-content{
+    display:flex;
+    height: 500px;
+}
+
+.main-content{
+    height:unset;
+    margin-top:0;
+	  background:white;
+}
+
+.main-content>.main-description,.main-content>.rules-prizes{
+    padding:20px;
+    width:21%;
+    font-size:0.8em;
+    font-family:serif;
+}
+
+.rules, .prizes{
+    margin: 0;
+}
+
+section header h3{
+    margin-bottom: 20px;
+}
+
+h3{
+	font-size:x-large;
+}
+
+section.comp-category.event{
+    margin-right: 10%;
+}
+
+section.comp-category.blue{
+    background: #B3E5FC;
+}
+
+div.large-event-pic{
+  /*  width:44.5%;*/
+  padding-left: 4px;
+  padding-right: 4px;
+}
+
+div.large-event-pic>img{
+    margin: unset;
+    width: 100%;
+    height: 492px;
+    border:4px solid yellow;
+}
+
+img.small-event-pic{
+    position: relative;
+    width: 250px;
+    height: 220px;
+    border: 4px solid  yellow;
+    margin-top:5%;
+    margin-left: 25%;
+}
+
+.event-content>.left-clickable-box, .event-content>.right-clickable-box{
+    position: 	relative;
+    background:url(../images/border.png);
+    background-size: 100% 100%;
+    min-width:10%;
+}
+
+.arrow{
+    margin-left:30%;
+    position: absolute;
+    top:50%;
+    width:30%;
+    transform:translateY(-40%);
+}
+
+.left-clickable-box>img.arrow{
+	transform:rotate(180deg);
+}
+
+.register-btn{
+    position: relative;
+    margin-top:20%;
+    background:yellow;
+    font-size:large;
+    border:none;
+    padding:10px;
+    width:100%;
+    font-family: "Mathlete";
+    font-size: 3em;
+}
+
+h1, h2, h3{
+    font-size:xx-large;
+	font-family: Mathlete, serif;
+}
+
+/*
+*******************************************************
+				RESPONSIVENESS
+*******************************************************
+*/
+@media only screen and (max-device-width:800px)
 {
+	body{
+		font-size:large;
+	}
+	.content{
+		display:flex;
+		flex-flow:column;
+	}
+	
 	.content .event
 	{
 		width:98%;
 	}
-	.content .border
-	{
-		display:none;
+
+	
+	#competitions-page>.border{
+		display: none;
 	}
+	
+	.content, .event-content{
+		height: 70%;	
+	}	
+	
+	.main-content{
+		flex-flow:column;	
+	}
+	
+	.main-content>.main-description,.main-content>.rules-prizes{
+      width:80%;
+      margin-left: auto;
+      margin-right: auto;
+	}
+    
+    .large-event-pic{
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+	
+	#logo{
+		width: 20%;
+		height:100%;
+	}
+	#top{
+		display:flex;
+		flex-flow:column;
+		min-height:10vh;
+	}
+	
+	#panel{
+		display: none;
+	}
+	
+	#panel nav ul{
+		position:relative;
+		display:flex;
+		flex-flow:column;
+		margin-left: 0;
+		transform:unset;
+		width:100%;
+		border-top:1px solid grey;
+		border-bottom:1px solid grey;
+	}
+	
+	nav ul li{
+		position:relative;
+		padding:0;
+		margin: 0;
+		width: 95%;
+		padding-left:5%;
+		font-size:5vh;
+		min-height:8vh;
+	}
+	
+	#toggle{
+		position:absolute;
+		top:2vh;
+		display:block;
+		
+		width: 10vw;
+		height:6vh;
+		transform: rotate(90deg);
+		font-size:5vw;
+		right:8vw;
+	}
+	
+	.login{
+		position: relative;
+		transform: unset;
+		margin-left: 10px;
+		left: 0;
+		top:0;
+		font-size:5vh;
+		min-height:8vh;
+	}
+	
+	.title>h2{
+		width: 80%;
+		font-size:7vh;
+	}
+	
+	.content .event>h1{
+		font-size:7vh;
+	}
+	
+	p{
+		padding:5%;
+		font-size:3vh;
+	}
+	
+	div li{
+		font-size:3vh;
+		padding-left:5%;
+	}
+	
+	.pokemon{
+		min-width:50vw;
+		min-height:50vh;
+	}
+	
+	section header h3{
+		font-size:7vh;
+	}
+	
+	#event-category-page .pokemon, .small-event-pic{
+		min-width:30vw;
+		min-height:30vh;
+	}
+	
+	.register-btn{
+		font-size:7vh;
 }
