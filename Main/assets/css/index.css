@@ -223,9 +223,10 @@ nav li{
 }
 
 #event-category-page .main-content section .small-event-pic{
-	width: 90%;
+	width: 120%;
 	height: 230px;
 	padding: 0;
+	margin-left: 0;
 }
 
 /*
@@ -233,6 +234,17 @@ nav li{
 							EVENTS
 **************************************************************
 */
+
+
+#event-page{
+	position: absolute;
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	overflow: hidden;
+	top: 21%;
+}
+
 .event-content{
 	margin: 0;
 	padding: 0;
@@ -281,7 +293,10 @@ div.large-event-pic{
 }
 
 div.large-event-pic>img{
-    margin: unset;
+    /*margin: unset;*/
+    margin:0;
+    padding: 0;
+    margin-top: 10px;
     width: 100%;
     height: 492px;
     border:4px solid yellow;
