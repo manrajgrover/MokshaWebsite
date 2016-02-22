@@ -19,7 +19,7 @@ body{
 ********************************************************
 */
 #top{
-    font-family:'Sans serif';
+	font-family: 'Maven Pro', sans-serif;
     font-size:large;
 	text-transform: uppercase;
 	position: relative;
@@ -143,10 +143,12 @@ nav li:hover
 }
 
 .content .event p{
+	font-family: 'Maven Pro', sans-serif;
 	margin-bottom: 10px;
 }
 
 .content .event ul{
+	font-family: 'Maven Pro', sans-serif;
 	list-style: none;
 	font-weight: bold;
 }
@@ -269,7 +271,7 @@ nav li:hover
     padding:20px;
     width:21%;
     font-size:0.8em;
-    font-family:serif;
+    font-family: 'Maven Pro', sans-serif;
 }
 
 .rules, .prizes{
