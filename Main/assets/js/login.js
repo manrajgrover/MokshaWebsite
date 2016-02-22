@@ -1,9 +1,13 @@
 $('#top').on('click','.login.profile',function(){
-  $('#lightbox,#moksha-login').fadeIn();
+  $('#lightbox,#moksha-login,#closeloginpop').fadeIn();
 });
 
 $('#lightbox').click(function(){
-  $('#lightbox,#moksha-login').fadeOut();
+  $('#lightbox,#moksha-login,#closeloginpop').fadeOut();
+});
+
+$('#closeloginpop').click(function(){
+  $('#lightbox,#moksha-login,#closeloginpop').fadeOut();
 });
 
 $('#moksha-login').on('click','.head>.tab',function(){
@@ -68,4 +72,8 @@ $('#moksha-login>.input-wrap').on('click','#get-LogIn',function(){
 
     }
   });
+});
+
+$(function(){
+  $('#lightbox,#moksha-login,#closeloginpop').fadeIn();
 });
