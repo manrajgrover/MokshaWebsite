@@ -9,11 +9,12 @@ for (var i = nav.getElementsByTagName('li').length - 1; i >= 0; i--) {
 	nav.getElementsByTagName('li')[i].onclick = function(){
 		switch(this.innerHTML){
 			case "Home":
+			  $('.title>h2').text('HOME');
 				accomodation_page.style.visibility = "hidden";
 				competitions.style.visibility = "visible";
 				event_category.style.visibility = "hidden";
 				event_page.style.visibility = "hidden";
-				
+
 				if (document.documentElement.clientWidth>=800){
 					competitions.style.left= "10%";
 				}
@@ -23,10 +24,11 @@ for (var i = nav.getElementsByTagName('li').length - 1; i >= 0; i--) {
 				event_category.style.left = "100%";
 				event_page.style.left = "100%";
 				accomodation_page.style.left = "100%";
-				
+
 				break;
-				
+
 			case "Events":
+				$('.title>h2').text('EVENTS');
 				accomodation_page.style.visibility = "hidden";
 				event_category.style.visibility = "visible";
 				competitions.style.visibility = "hidden";
@@ -36,27 +38,29 @@ for (var i = nav.getElementsByTagName('li').length - 1; i >= 0; i--) {
 				event_category.style.left = "0%";
 				event_page.style.left = "100%";
 				accomodation_page.style.left = "100%";
-				
+
 				break;
 			case "Competitions":
+				$('.title>h2').text('COMPETITIONS');
 				accomodation_page.style.visibility = "hidden";
 				event_page.style.visibility = "visible";
 				event_category.style.visibility = "hidden";
 				competitions.style.visibility = "hidden";
-				
+
 				competitions.style.left = "-100%";
 				event_category.style.left = "-100%";
 				event_page.style.left = "0%";
 				accomodation_page.style.left = "100%";
-				
+
 				break;
-				
+
 			case "Accomodation":
+				$('.title>h2').text('ACCOMODATION');
 				accomodation_page.style.visibility = "visible";
 				event_page.style.visibility = "hidden";
 				event_category.style.visibility = "hidden";
 				competitions.style.visibility = "hidden";
-				
+
 				competitions.style.left = "-100%";
 				event_category.style.left = "-100%";
 				event_page.style.left = "-100%";
@@ -66,7 +70,7 @@ for (var i = nav.getElementsByTagName('li').length - 1; i >= 0; i--) {
 				else{
 					accomodation_page.style.left = "0%";
 				}
-				
+
 				break;
 		}
 	};
