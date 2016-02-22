@@ -64,7 +64,7 @@ nav li{
 	 padding-right: 5%;
    list-style-type: none;
 
-   
+
 }
 nav li:hover
 {
@@ -200,7 +200,7 @@ nav li:hover
 	padding: 0;
 	margin: 0;
 	display: inline-block;
-	
+
 	width: 4%;
 	background: url('../images/border.png');
 	background-size: 100% 100%;
@@ -378,9 +378,9 @@ h1, h2, h3{
 *******************************************************
 */
 
-@media only screen and (max-device-width:800px)
+@media only screen and (max-width:800px)
 {
-	
+
 	body{
 		font-size:large;
 	}
@@ -388,7 +388,7 @@ h1, h2, h3{
 		display:flex;
 		flex-flow:column;
 	}
-	
+
 	.content, .event-content{
 		overflow:scroll;
 		margin-left:0;
@@ -404,11 +404,11 @@ h1, h2, h3{
 	#competitions-page>.border{
 		display: none;
 	}
-	
+
 	#accomodation-page ol{
 		padding-left:7vw;
 	}
-	
+
 
 	.content, .main-content{
 		flex-flow:column;
@@ -518,11 +518,30 @@ h1, h2, h3{
 		max-height:30vh;
 		max-width: 50vw;
 	}
-	
+
 	.left-clickable-box, .right-clickable-box{
 		display: none;
 	}
 
 	.register-btn{
 		font-size:7vh;
+	}
+
+	#closeloginpop{
+		top:2px!important;
+	}
+
+	#moksha-login
+	{
+		width:90%!important;
+		top:7%!important;
+		height:90%!important;
+		padding:0px!important;
+		left:5%!important;
+	}
+
+	#moksha-login>.input-wrap{
+		height:65%!important;
+	}
+
 }
