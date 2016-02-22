@@ -61,6 +61,10 @@ nav li{
 	 padding-right: 5%;
    list-style-type: none;
 }
+nav li:hover
+{
+	cursor:pointer;
+}
 
 .login{
     position: absolute;
@@ -72,7 +76,10 @@ nav li{
     transform:translateY(-50%);
     right:10vw;
 }
-
+.login:hover
+{
+	cursor:pointer;
+}
 .title{
     background: transparent;
     text-align: center;
@@ -306,37 +313,37 @@ h1, h2, h3{
 		display:flex;
 		flex-flow:column;
 	}
-	
+
 	.content .event
 	{
 		width:98%;
 	}
 
-	
+
 	#competitions-page>.border{
 		display: none;
 	}
-	
+
 	.content, .event-content{
-		height: 70%;	
-	}	
-	
-	.main-content{
-		flex-flow:column;	
+		height: 70%;
 	}
-	
+
+	.main-content{
+		flex-flow:column;
+	}
+
 	.main-content>.main-description,.main-content>.rules-prizes{
       width:80%;
       margin-left: auto;
       margin-right: auto;
 	}
-    
+
     .large-event-pic{
         width: 90%;
         margin-left: auto;
         margin-right: auto;
     }
-	
+
 	#logo{
 		width: 20%;
 		height:100%;
@@ -346,11 +353,11 @@ h1, h2, h3{
 		flex-flow:column;
 		min-height:10vh;
 	}
-	
+
 	#panel{
 		display: none;
 	}
-	
+
 	#panel nav ul{
 		position:relative;
 		display:flex;
@@ -361,7 +368,7 @@ h1, h2, h3{
 		border-top:1px solid grey;
 		border-bottom:1px solid grey;
 	}
-	
+
 	nav ul li{
 		position:relative;
 		padding:0;
@@ -371,19 +378,19 @@ h1, h2, h3{
 		font-size:5vh;
 		min-height:8vh;
 	}
-	
+
 	#toggle{
 		position:absolute;
 		top:2vh;
 		display:block;
-		
+
 		width: 10vw;
 		height:6vh;
 		transform: rotate(90deg);
 		font-size:5vw;
 		right:8vw;
 	}
-	
+
 	.login{
 		position: relative;
 		transform: unset;
@@ -393,40 +400,40 @@ h1, h2, h3{
 		font-size:5vh;
 		min-height:8vh;
 	}
-	
+
 	.title>h2{
 		width: 80%;
 		font-size:7vh;
 	}
-	
+
 	.content .event>h1{
 		font-size:7vh;
 	}
-	
+
 	p{
 		padding:5%;
 		font-size:3vh;
 	}
-	
+
 	div li{
 		font-size:3vh;
 		padding-left:5%;
 	}
-	
+
 	.pokemon{
 		min-width:50vw;
 		min-height:50vh;
 	}
-	
+
 	section header h3{
 		font-size:7vh;
 	}
-	
+
 	#event-category-page .pokemon, .small-event-pic{
 		min-width:30vw;
 		min-height:30vh;
 	}
-	
+
 	.register-btn{
 		font-size:7vh;
 }

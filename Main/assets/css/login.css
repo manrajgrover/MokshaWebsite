@@ -40,6 +40,9 @@
   text-align:center;
   line-height:52px;
   border-radius: 4px;
+  font-size:26px;
+  font-family: Mathlete;
+	src: url(../fonts/Mathlete-Skinny.otf);
 }
 .head>.tab:hover
 {
@@ -75,6 +78,9 @@
   border-radius:8px;
   color:#4FD44F;
   margin-top:10px;
+  font-size:28px;
+  font-family: Mathlete;
+	src: url(../fonts/Mathlete-Skinny.otf);
   transition:background-color 0.4s,color 0.4s;
 }
 #moksha-login>.input-wrap>div.moksha-button:hover
