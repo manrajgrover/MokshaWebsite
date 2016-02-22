@@ -130,3 +130,39 @@
   border-style:solid;
   border-color:#e5e5e5;
 }
+
+
+@media only screen and (max-device-width: 800px)
+  {
+    #moksha-login
+    {
+          top:10%;
+          left:10%;
+          width:calc(75vw - 10%);
+          height:auto;
+          padding:5%;
+          font-size:0.5em;
+    }
+    
+    .tab{
+      font-size:2vh;
+    }
+    
+    #moksha-login>.input-wrap{
+      padding:0;
+      padding-bottom: 10px;
+      height:auto;
+    }
+
+
+    #moksha-login>.input-wrap>input{
+      height: 20px;
+      font-size: 19px;
+    }
+    
+   #reg-alert
+   {
+     min-height: 5vh;
+     font-size: 2vh;
+   }
+}
