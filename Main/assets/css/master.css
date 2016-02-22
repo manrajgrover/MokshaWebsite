@@ -1,5 +1,5 @@
 body{
-	overflow-x: hidden;
+	overflow-x: hidden
 }
 
 #competitions-page{
@@ -8,25 +8,38 @@ body{
 
 	-webkit-transition: all 1s linear;
 	-moz-transition: all 1s linear;
-	transition:all ls linear;
+	transition:all 1s linear;
 	/*left: 10%;*/
 }
 
 #event-category-page{
+	visibility : hidden;
 	left: 100%;
 
 	-webkit-transition: all 1s linear;
 	-moz-transition: all 1s linear;
-	transition: all ls linear;
+	transition: all 1s linear;
 	/*left: 0%;*/
 }
 
 #event-page{
 	position: absolute;
 	left:100%;
+	visibility:hidden;
 
 	-webkit-transition: all 1s linear;
 	-moz-transition: all 1s linear;
-	transition: all ls linear;
+	transition: all 1s linear;
 	/*left: 0;*/
+}
+
+
+#accomodation-page{
+	position: absolute;
+	left:100%;
+	visibility:hidden;
+
+	-webkit-transition: all 1s linear;
+	-moz-transition: all 1s linear;
+	transition: all 1s linear;
 }
