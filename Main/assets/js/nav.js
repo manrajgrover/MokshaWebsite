@@ -14,7 +14,12 @@ for (var i = nav.getElementsByTagName('li').length - 1; i >= 0; i--) {
 				event_category.style.visibility = "hidden";
 				event_page.style.visibility = "hidden";
 				
-				competitions.style.left= "10%";
+				if (document.documentElement.clientWidth>=800){
+					competitions.style.left= "10%";
+				}
+				else{
+					competitions.style.left = "0%";
+				}
 				event_category.style.left = "100%";
 				event_page.style.left = "100%";
 				accomodation_page.style.left = "100%";
@@ -55,7 +60,12 @@ for (var i = nav.getElementsByTagName('li').length - 1; i >= 0; i--) {
 				competitions.style.left = "-100%";
 				event_category.style.left = "-100%";
 				event_page.style.left = "-100%";
-				accomodation_page.style.left = "10%";
+				if (document.documentElement.clientWidth>=800){
+					accomodation_page.style.left= "10%";
+				}
+				else{
+					accomodation_page.style.left = "0%";
+				}
 				
 				break;
 		}

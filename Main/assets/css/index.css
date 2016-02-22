@@ -218,16 +218,14 @@ nav li:hover
 	position: absolute;
 	margin: 0;
 	padding: 0;
-	top: 21%;
 	width: 100%;
 	overflow: hidden;
 	/*z-index: 100;*/
 }
 
 #event-category-page .main-content section .pokemon{
-	width: 120%;
-	height: 120%;
-	margin-top: -5%;
+	min-height: 20vh;
+	margin-top: 10vh;
 }
 
 #event-category-page .main-content section .small-event-pic{
@@ -250,14 +248,12 @@ nav li:hover
 	padding: 0;
 	width: 100%;
 	overflow: hidden;
-	top: 21%;
 }
 
 .event-content{
 	margin: 0;
 	padding: 0;
     display:flex;
-    height: 75%;
 }
 
 .main-content{
@@ -360,10 +356,6 @@ h1, h2, h3{
 ******************************************************
 */
 
-#accomodation-page{
-	overflow:visible;
-}
-
 #accomodation-page>section{
 	padding:1%;
 	font-family : 'Maven Pro', sans-serif;
@@ -372,6 +364,7 @@ h1, h2, h3{
 #accomodation-page>section>ol{
 	margin:3%;
 	padding-top:0;
+	background: white;
 }
 
 #accomodation-page>section>ol>li{
@@ -411,18 +404,15 @@ h1, h2, h3{
 	#competitions-page>.border{
 		display: none;
 	}
-
-	.content{
-		height: 70%;
+	
+	#accomodation-page ol{
+		padding-left:7vw;
 	}
 	
-	.event-content{
-		height:70%;
-	}
 
-	.main-content{
+	.content, .main-content{
 		flex-flow:column;
-		height:100%;
+		width:100vw;
 	}
 
 	.main-content>.main-description,.main-content>.rules-prizes{
@@ -525,6 +515,12 @@ h1, h2, h3{
 	#event-category-page .pokemon, .small-event-pic{
 		min-width:30vw;
 		min-height:30vh;
+		max-height:30vh;
+		max-width: 50vw;
+	}
+	
+	.left-clickable-box, .right-clickable-box{
+		display: none;
 	}
 
 	.register-btn{

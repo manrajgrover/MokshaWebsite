@@ -23,9 +23,9 @@ body{
 }
 
 #event-page{
+	visibility : hidden;
 	position: absolute;
 	left:100%;
-	visibility:hidden;
 
 	-webkit-transition: all 1s linear;
 	-moz-transition: all 1s linear;
@@ -35,11 +35,18 @@ body{
 
 
 #accomodation-page{
+	visibility : hidden;
 	position: absolute;
 	left:100%;
-	visibility:hidden;
 
 	-webkit-transition: all 1s linear;
 	-moz-transition: all 1s linear;
 	transition: all 1s linear;
+}
+
+@media only screen and (max-device-width:800px)
+{
+	#competitions-page{
+		left:0;
+	}
 }
