@@ -25,7 +25,7 @@ $('#moksha-login').on('click','.head>.tab',function(){
 			<input id="phone" type="text" placeholder="Phone"><br>\
 			<input id="college" type="text" placeholder="College"><br>\
       <input id="passphrase-reg" type="password" placeholder="Password"><br>\
-			<div id="get-Register" class="moksha-button">LogIn</div>');
+			<div id="get-Register" class="moksha-button">Register</div>');
     }
 
   }
