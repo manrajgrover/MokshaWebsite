@@ -263,7 +263,7 @@ img.small-event-pic{
     min-width:10%;
 }
 
-.arrow{
+#event-category-page.arrow, #event-page.arrow{
     margin-left:30%;
     position: absolute;
     top:50%;
