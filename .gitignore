@@ -1,1 +1,5 @@
 Main/bower_components
+
+
+#mysql database connection file 
+connection.inc.php
