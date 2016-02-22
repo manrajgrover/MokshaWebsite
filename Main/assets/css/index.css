@@ -357,18 +357,51 @@ h1, h2, h3{
 }
 
 /*
+******************************************************
+				ACCOMODATION
+******************************************************
+*/
+
+#acccomodation-page{
+	overflow:visible;
+}
+
+#acccomodation-page>section{
+	padding:1%;
+	font-family : 'Maven Pro', sans-serif;
+}
+
+#acccomodation-page>section>ol{
+	margin:3%;
+	padding-top:0;
+}
+
+#acccomodation-page>section>ol>li{
+	padding:0.5%;
+}
+
+
+/*
 *******************************************************
 				RESPONSIVENESS
 *******************************************************
 */
+
 @media only screen and (max-device-width:800px)
 {
+	
 	body{
 		font-size:large;
 	}
 	.content{
 		display:flex;
 		flex-flow:column;
+	}
+	
+	.content, .event-content{
+		overflow:scroll;
+		margin-left:0;
+		margin-right:0;
 	}
 
 	.content .event
@@ -381,12 +414,17 @@ h1, h2, h3{
 		display: none;
 	}
 
-	.content, .event-content{
+	.content{
 		height: 70%;
+	}
+	
+	.event-content{
+		height:70%;
 	}
 
 	.main-content{
 		flex-flow:column;
+		height:100%;
 	}
 
 	.main-content>.main-description,.main-content>.rules-prizes{

@@ -10,17 +10,29 @@ for (var i = nav.getElementsByTagName('li').length - 1; i >= 0; i--) {
 			case "Home":
 				competitions.style.left= "10%";
 				event_category.style.left = "100%";
-				event_page.style.left = "200%";
+				event_page.style.left = "100%";
+				
+				competitions.style.visibility = "visible";
+				event_category.style.visibility = "hidden";
+				event_page.style.visibility = "hidden";
 				break;
 			case "Events":
 				competitions.style.left="-100%";
 				event_category.style.left = "0%";
 				event_page.style.left = "100%";
+				
+				event_category.style.visibility = "visible";
+				competitions.style.visibility = "hidden";
+				event_page.style.visibility = "hidden";
 				break;
 			case "Competitions":
-				competitions.style.left = "-200%";
+				competitions.style.left = "-100%";
 				event_category.style.left = "-100%";
 				event_page.style.left = "0%";
+				
+				event_page.style.visibility = "visible"
+				event_category.style.visibility = "hidden";
+				competitions.style.visibility = "hidden";
 				break;
 		}
 	};
