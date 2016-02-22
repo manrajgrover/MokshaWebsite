@@ -325,7 +325,7 @@ img.small-event-pic{
     min-width:10%;
 }
 
-.arrow{
+#event-category-page img.arrow, #event-page img.arrow{
     margin-left:30%;
     position: absolute;
     top:50%;
@@ -333,7 +333,7 @@ img.small-event-pic{
     transform:translateY(-40%);
 }
 
-.left-clickable-box>img.arrow{
+#event-category-page >.left-clickable-box>img.arrow, #event-page >.left-clickable-box>img.arrow{
 	transform:rotate(180deg);
 }
 
