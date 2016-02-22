@@ -19,6 +19,7 @@
     "tests"
   ],
   "dependencies": {
-    "bootstrap": "^3.3.6"
+    "bootstrap": "^3.3.6",
+    "animate.css": "animate-css#^3.5.1"
   }
 }
