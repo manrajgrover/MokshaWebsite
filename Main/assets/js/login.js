@@ -42,7 +42,7 @@ $('#moksha-login>.input-wrap').on('click','#get-Register',function(){
   var college = $('#college').val();
   var pass = $('#passphrase-reg').val();
   $.ajax({
-    url:'http://csinsit.org/moksha2016/account/signup.php',
+    url:'../../../api/account/signup.php',
     type:'get',
     data:{name:name,email:email,pass:pass,phone:phone,college:college},
     dataType:'json',
@@ -56,11 +56,11 @@ $('#moksha-login>.input-wrap').on('click','#get-Register',function(){
   });
 });
 
-$('#moksha-login>.input-wrap').on('click','#get-LogIn',function(){
+$('#moksha-login>.input-wrap').on('click','#get-logIn',function(){
   var phone = $('#phone-log').val();
   var pass = $('#passphrase').val();
   $.ajax({
-    url:'http://csinsit.org/moksha2016/account/login.php',
+    url:'../../../api/account/login.php',
     type:'get',
     data:{pass:pass,phone:phone},
     dataType:'json',
