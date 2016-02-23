@@ -38,7 +38,7 @@ p{
 */
 #top{
 	font-family: 'Maven Pro', sans-serif;
-    font-size:large;
+  font-size:large;
 	text-transform: uppercase;
 	position: relative;
 	margin:0;
@@ -58,8 +58,8 @@ img{
 
 nav{
   /*padding-left:3vw;*/
+	position: relative;
 	margin: 0;
-	margin-top: -10px;
 	display: flex;
 	flex-direction:column;
 	justify-content:center;
@@ -70,8 +70,7 @@ nav ul{
     display: flex;
     flex-flow: row;
 	position: absolute;
-    top:40%;
-    transform:translateY(-50%);
+    transform:translateY(30%);
 }
 
 nav li{
@@ -128,6 +127,16 @@ nav li:hover
 
 #panel{
 	margin:0;
+}
+
+.submenu{
+	display:flex;
+	flex-flow:column;
+	color: grey;
+}
+
+.submenu li:hover{
+	color:#B3E5FC;
 }
 /*
 *********************************************************
