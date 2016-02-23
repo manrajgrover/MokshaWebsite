@@ -18,6 +18,7 @@ body{
 }
 
 .logo-img{
+	display:none;
 	position: absolute;
 	left: calc(50% - 175px);
 	width:350px;
@@ -264,6 +265,11 @@ nav li:hover
 	width: 160px;
 	margin-top: 15%;
 	margin-left: 10%;
+}
+
+.pokemon[alt="comingsoon"]{
+	width: 250px;
+	height: auto;
 }
 
 .content .border{

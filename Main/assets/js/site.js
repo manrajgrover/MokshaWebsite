@@ -15,7 +15,7 @@ $(function(){
     onImg=1;
     setTimeout(function(){
       slideshow();
-    },300);
+    },250);
   }
 
   $.ajax({
@@ -62,8 +62,7 @@ $(function(){
 
   $('.logo-img').load(function(){
     ++loaded;
-    if(loaded==6)
-    slideshow();
   });
 
+  slideshow();
 });
