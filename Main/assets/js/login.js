@@ -65,7 +65,15 @@ $('#moksha-login>.input-wrap').on('click','#get-logIn',function(){
     data:{pass:pass,phone:phone},
     dataType:'json',
     success:function(r){
-      console.log(r);
+      if(r.success==true)
+      {
+        $('#top').find('.login,.signout').remove();
+        $('#top>#panel').append('<div class="signout profile">Signout</div>');
+        $('#lightbox,#moksha-login,#closeloginpop').fadeOut();
+      }
+      else {
+        alert('Incorrect Credentials');
+      }
     },
     error:function(e){
       console.log(e);
@@ -74,6 +82,28 @@ $('#moksha-login>.input-wrap').on('click','#get-logIn',function(){
   });
 });
 
+$('#top').on('click','.signout.profile',function(){
+  $.ajax({
+    url:'../../../api/account/signout.php',
+    type:'get',
+    dataType:'json',
+    success:function(r){
+      if(r.success==true)
+      {
+        $('#top').find('.login,.signout').remove();
+        $('#top>#panel').append('<div class="login profile">Login</div>');
+        $('#lightbox,#moksha-login,#closeloginpop').fadeIn();
+      }
+    },
+    error:function(e){
+      console.log(e);
+    }
+  });
+});
+
+
+
 $(function(){
+  if(!$('#top').find('.signout').length)
   $('#lightbox,#moksha-login,#closeloginpop').fadeIn();
 });

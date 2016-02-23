@@ -104,6 +104,21 @@ nav li:hover
 {
 	cursor:pointer;
 }
+.signout{
+    position: absolute;
+    font-family: "Mathlete";
+    font-size: 1.5em;
+	padding-left:2.5%;
+	padding-right:2.5%;
+    top:40%;
+    transform:translateY(-50%);
+    right: 10vw;
+
+}
+.signout:hover
+{
+	cursor:pointer;
+}
 .title{
     background: transparent;
     text-align: center;
@@ -529,6 +544,15 @@ h1, h2, h3{
 	}
 
 	.login{
+		position: relative;
+		transform: unset;
+		margin-left: 10px;
+		left: 0;
+		top:0;
+		font-size:5vh;
+		min-height:8vh;
+	}
+	.signout{
 		position: relative;
 		transform: unset;
 		margin-left: 10px;
