@@ -52,6 +52,10 @@ $(function(){
           $('#event-register>.content>.rules-prizes>.register-btn').attr('data-event',r.id);
           $('#event-register>.content>.rules-prizes>.register-btn').attr('data-name',r.name);
           $('#event-register>.content>.large-event-pic>img').attr('src',r.image_url);
+          $('#event-register>.content>.large-event-pic>img').load(function(){
+            $(this).css('display','block');
+          });
+          $('#lightbox,#event-register,#closeloginpop').fadeIn();
         },
         error:function(e){
           console.log(e);
