@@ -482,7 +482,7 @@ h1, h2, h3{
 	height:50%;
 }
 
-p{
+#home-page p{
 	/*background: yellow;*/
 	font-family: 'Home School';
 	font-size:10vh;
@@ -670,6 +670,14 @@ p{
 
 	#moksha-login>.input-wrap{
 		height:65%!important;
+	}
+	
+	#dora, #scrap-logo{
+		max-height: 20vh;
+	}
+	
+	#scrap-logo{
+		margin-left: 12vw;
 	}
 
 }
