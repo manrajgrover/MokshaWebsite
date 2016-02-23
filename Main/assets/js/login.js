@@ -3,11 +3,11 @@ $('#top').on('click','.login.profile',function(){
 });
 
 $('#lightbox').click(function(){
-  $('#lightbox,#moksha-login,#closeloginpop').fadeOut();
+  $('#lightbox,#moksha-login,#closeloginpop,#event-register').fadeOut();
 });
 
 $('#closeloginpop').click(function(){
-  $('#lightbox,#moksha-login,#closeloginpop').fadeOut();
+  $('#lightbox,#moksha-login,#closeloginpop,#event-register').fadeOut();
 });
 
 $('#moksha-login').on('click','.head>.tab',function(){
@@ -47,11 +47,16 @@ $('#moksha-login>.input-wrap').on('click','#get-Register',function(){
     data:{name:name,email:email,pass:pass,phone:phone,college:college},
     dataType:'json',
     success:function(r){
-      console.log(r);
+      if(r.success==true)
+      {
+        alert('Successfully Registered. Login to Continue');
+      }
+      else {
+        alert('Invalid or existing Credentials');
+      }
     },
     error:function(e){
       console.log(e);
-
     }
   });
 });
