@@ -23,6 +23,7 @@ $(function(){
       $('#event-page>.content>.event>.section-desc').empty().append('<p>'+r[0].description+'</p>');
       $('#event-page>.content>.rules-prizes>.rules>.section-desc').empty().append(r[0].rules);
       $('#event-page>.content>.rules-prizes>.prizes>.section-desc').empty().append(r[0].prizes);
+      $('#event-page>.content>.rules-prizes>.register-btn').attr('data-event',r[0].id);
       $('#event-page>.content>.large-event-pic>img').attr('src',r[0].image_url);
       comp_itr = 1;
     },
@@ -38,6 +39,7 @@ $(function(){
     $('#event-page>.content>.event>.section-desc').empty().append('<p>'+comp[comp_itr].description+'</p>');
     $('#event-page>.content>.rules-prizes>.rules>.section-desc').empty().append(comp[comp_itr].rules);
     $('#event-page>.content>.rules-prizes>.prizes>.section-desc').empty().append(comp[comp_itr].prizes);
+    $('#event-page>.content>.rules-prizes>.register-btn').attr('data-event',comp[comp_itr].id);
     $('#event-page>.content>.large-event-pic>img').attr('src',comp[comp_itr].image_url);
     ++comp_itr
   });
@@ -49,6 +51,7 @@ $(function(){
     $('#event-page>.content>.event>.section-desc').empty().append('<p>'+comp[comp_itr].description+'</p>');
     $('#event-page>.content>.rules-prizes>.rules>.section-desc').empty().append(comp[comp_itr].rules);
     $('#event-page>.content>.rules-prizes>.prizes>.section-desc').empty().append(comp[comp_itr].prizes);
+    $('#event-page>.content>.rules-prizes>.register-btn').attr('data-event',comp[comp_itr].id);
     $('#event-page>.content>.large-event-pic>img').attr('src',comp[comp_itr].image_url);
     --comp_itr
   });

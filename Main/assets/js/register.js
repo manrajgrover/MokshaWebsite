@@ -1,0 +1,16 @@
+$(function(){
+  $('#event-page>.content>.rules-prizes').on('click','.register-btn',function(){
+    $.ajax({
+      url:'../../../api/register/new.php',
+      type:'get',
+      data:{event_id:Number($(this).attr('data-event'))},
+      dataType:'json',
+      success:function(r){
+        console.log(r);
+      },
+      error:function(e){
+        console.log(e);
+      }
+    });
+  });
+});
