@@ -13,6 +13,7 @@ body{
     /*padding-bottom:15vh;*/
 }
 
+
 #placeholder-image
 {
 	width:400px;
@@ -23,6 +24,12 @@ body{
 #placeholder-image>img
 {
 	width:100%;
+}
+
+p{
+	font-family:'Maven Pro', sans-serif;
+	padding:2%;
+
 }
 /*
 ********************************************************
@@ -70,7 +77,7 @@ nav ul{
 nav li{
 	 display: block;
 	 font-family: "Mathlete";
-	 font-size: 2em;
+	 font-size: 1.5em;
 	 padding-left:5%;
 	 padding-right: 5%;
    list-style-type: none;
@@ -85,7 +92,7 @@ nav li:hover
 .login{
     position: absolute;
     font-family: "Mathlete";
-    font-size: 2em;
+    font-size: 1.5em;
 	padding-left:2.5%;
 	padding-right:2.5%;
     top:40%;
@@ -374,7 +381,7 @@ h1, h2, h3{
 ******************************************************
 */
 
-#accomodation-page>section{
+#contact-page>section,#accomodation-page>section{
 	padding:1%;
 	font-family : 'Maven Pro', sans-serif;
 }
@@ -388,7 +395,6 @@ h1, h2, h3{
 #accomodation-page>section>ol>li{
 	padding:0.5%;
 }
-
 
 /*
 *******************************************************
