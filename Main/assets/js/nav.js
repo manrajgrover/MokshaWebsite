@@ -64,7 +64,7 @@ for (var i = nav.getElementsByTagName('li').length - 1; i >= 0; i--) {
 				event_page.style.left = "0%";
 				accomodation_page.style.left = "100%";
 				contact_page.style.left = "100%";
-				
+
 				break;
 
 			case "Accomodation":
@@ -87,7 +87,7 @@ for (var i = nav.getElementsByTagName('li').length - 1; i >= 0; i--) {
 				}
 
 				break;
-				
+
 			case "Contact":
 				$('.title>h2').text('CONTACT US');
 				contact_page.style.visibility = "visible";

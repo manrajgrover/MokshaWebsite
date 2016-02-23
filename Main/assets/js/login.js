@@ -3,11 +3,11 @@ $('#top').on('click','.login.profile',function(){
 });
 
 $('#lightbox').click(function(){
-  $('#lightbox,#moksha-login,#closeloginpop').fadeOut();
+  $('#lightbox,#moksha-login,#closeloginpop,#event-register').fadeOut();
 });
 
 $('#closeloginpop').click(function(){
-  $('#lightbox,#moksha-login,#closeloginpop').fadeOut();
+  $('#lightbox,#moksha-login,#closeloginpop,#event-register').fadeOut();
 });
 
 $('#moksha-login').on('click','.head>.tab',function(){
@@ -47,11 +47,16 @@ $('#moksha-login>.input-wrap').on('click','#get-Register',function(){
     data:{name:name,email:email,pass:pass,phone:phone,college:college},
     dataType:'json',
     success:function(r){
-      console.log(r);
+      if(r.success==true)
+      {
+        alert('Successfully Registered. Login to Continue');
+      }
+      else {
+        alert('Invalid or existing Credentials');
+      }
     },
     error:function(e){
       console.log(e);
-
     }
   });
 });
@@ -65,7 +70,15 @@ $('#moksha-login>.input-wrap').on('click','#get-logIn',function(){
     data:{pass:pass,phone:phone},
     dataType:'json',
     success:function(r){
-      console.log(r);
+      if(r.success==true)
+      {
+        $('#top').find('.login,.signout').remove();
+        $('#top>#panel').append('<div class="signout profile">Signout</div>');
+        $('#lightbox,#moksha-login,#closeloginpop').fadeOut();
+      }
+      else {
+        alert('Incorrect Credentials');
+      }
     },
     error:function(e){
       console.log(e);
@@ -74,6 +87,28 @@ $('#moksha-login>.input-wrap').on('click','#get-logIn',function(){
   });
 });
 
+$('#top').on('click','.signout.profile',function(){
+  $.ajax({
+    url:'../../../api/account/signout.php',
+    type:'get',
+    dataType:'json',
+    success:function(r){
+      if(r.success==true)
+      {
+        $('#top').find('.login,.signout').remove();
+        $('#top>#panel').append('<div class="login profile">Login</div>');
+        $('#lightbox,#moksha-login,#closeloginpop').fadeIn();
+      }
+    },
+    error:function(e){
+      console.log(e);
+    }
+  });
+});
+
+
+
 $(function(){
+  if(!$('#top').find('.signout').length)
   $('#lightbox,#moksha-login,#closeloginpop').fadeIn();
 });

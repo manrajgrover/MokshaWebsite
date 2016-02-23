@@ -103,6 +103,21 @@ nav li:hover
 {
 	cursor:pointer;
 }
+.signout{
+    position: absolute;
+    font-family: "Mathlete";
+    font-size: 1.5em;
+	padding-left:2.5%;
+	padding-right:2.5%;
+    top:40%;
+    transform:translateY(-50%);
+    right: 10vw;
+
+}
+.signout:hover
+{
+	cursor:pointer;
+}
 .title{
     background: transparent;
     text-align: center;
@@ -158,6 +173,7 @@ nav li:hover
 	width:20%;
 	background-color: white;
 	/*margin-right: 30px;*/
+	margin-top:5px;
 	font-size: .8em;
 	position: relative;
 }
@@ -227,7 +243,7 @@ nav li:hover
 	padding: 0;
 	margin: 0;
 	display: inline-block;
-
+  margin-top:5px;
 	width: 4%;
 	background: url('../images/border.png');
 	background-size: 100% 100%;
@@ -286,6 +302,7 @@ nav li:hover
 	margin-top:30px;
 	padding: 0;
     display:flex;
+		flex-wrap:wrap;
 }
 
 .main-content{
@@ -356,15 +373,15 @@ img.small-event-pic{
     min-width:10%;
 }
 
-#event-category-page img.arrow, #event-page img.arrow{
+/*#event-page img.arrow, #event-page img.arrow{
     margin-left:30%;
     position: absolute;
     top:50%;
     width:30%;
     transform:translateY(-40%);
-}
+}*/
 
-#event-category-page >.left-clickable-box>img.arrow, #event-page >.left-clickable-box>img.arrow{
+#event-page >.left-clickable-box>img.arrow, #event-page >.left-clickable-box>img.arrow{
 	transform:rotate(180deg);
 }
 
@@ -577,6 +594,15 @@ p{
 	}
 
 	.login{
+		position: relative;
+		transform: unset;
+		margin-left: 10px;
+		left: 0;
+		top:0;
+		font-size:5vh;
+		min-height:8vh;
+	}
+	.signout{
 		position: relative;
 		transform: unset;
 		margin-left: 10px;

@@ -1,5 +1,5 @@
 $(function(){
-  $('#event-page>.content>.rules-prizes').on('click','.register-btn',function(){
+  $('#event-register>.content>.rules-prizes').on('click','.register-btn',function(){
     var el = $(this);
     $.ajax({
       url:'../../../api/register/new.php',
@@ -11,7 +11,7 @@ $(function(){
         alert('Successfully registered for '+el.attr('data-name'));
         if(r.errcode==1)
         {
-          $('#lightbox,#moksha-login,#closeloginpop').fadeIn();
+          alert('Please Login to Register for events');
         }
         if(r.errcode==2)
         alert('Already registered for '+el.attr('data-name'));
@@ -21,4 +21,9 @@ $(function(){
       }
     });
   });
+
+  $('#event-page>.event>ul').on('click','li',function(){
+    $('#lightbox,#event-register,#closeloginpop').fadeIn();
+  });
+
 });

@@ -14,7 +14,6 @@ if(!isset($_SESSION['user_id'])){
 		echo json_encode(array(
 			'errcode'   =>   1
 		));
-		session_destroy();
 		die();
 }
 
@@ -45,5 +44,4 @@ $already = 2;
 $final_response = array(
 	'errcode'	=> $already,
 );
-session_destroy();
 echo json_encode($final_response);
