@@ -8,6 +8,12 @@ var nav = document.getElementById('panel'),
 
 for (var i = nav.getElementsByTagName('li').length - 1; i >= 0; i--) {
 	nav.getElementsByTagName('li')[i].onclick = function(){
+		
+		if ($(window).width()<800){
+			$("#toggle").trigger("click");
+		}
+		
+		
 		switch(this.innerHTML){
 			case "Home":
 			  $('.title>h2').text('HOME');

@@ -1,7 +1,7 @@
 function load()
 {
 	 $("#toggle").click(function(){
-        $("#panel").slideToggle("slow");
+        $("#panel").slideToggle("fast");
     });
 
 }
