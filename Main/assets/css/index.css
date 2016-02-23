@@ -376,6 +376,35 @@ h1, h2, h3{
 }
 
 /*
+*****************************************************
+				CONTACT
+******************************************************
+*/
+#contact-page{
+	min-height: 65%;
+}
+
+#contact-page div.contact{
+	font-family: 'Maven Pro', sans-serif;
+	font-size:18px;
+	padding: 1%;
+}
+
+#contact-page>.main-content{
+	width: 100%;
+	padding-left:5%;
+}
+
+#contact-page ul{
+	margin-left: 2%;
+	font-size:15px;
+}
+
+#contact-page	li{
+	list-style-type: none;
+}
+
+/*
 *******************************************************
 				RESPONSIVENESS
 *******************************************************
