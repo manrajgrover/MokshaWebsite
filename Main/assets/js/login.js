@@ -67,7 +67,7 @@ $('#moksha-login>.input-wrap').on('click','#get-logIn',function(){
   $.ajax({
     url:'../../../api/account/login.php',
     type:'get',
-    data:{pass:pass,phone:phone},
+    data:{pass:pass,user_var:phone},
     dataType:'json',
     success:function(r){
       if(r.success==true)
