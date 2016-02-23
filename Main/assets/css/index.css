@@ -446,6 +446,7 @@ h1, h2, h3{
 	#logo{
 		width: 20%;
 		height:100%;
+		max-height:7vh;
 	}
 	#top{
 		display:flex;
