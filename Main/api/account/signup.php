@@ -9,10 +9,6 @@
 require_once '../inc/connection.inc.php';
 require_once '../inc/function.inc.php';
 
-function isValidEmail($email){
-    return filter_var($email, FILTER_VALIDATE_EMAIL) !== false;
-}
-
 $name 		= clean_string($_GET['name']);
 $email 		= clean_string($_GET['email']);
 $password 	= encrypt_data(clean_string($_GET['pass']));

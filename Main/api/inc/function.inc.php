@@ -45,3 +45,6 @@ function timestamp_to_date($timestamp){
 	return date("Y-m-d H:i:s", $timestamp);
 }
 
+function isValidEmail($email){
+    return filter_var($email, FILTER_VALIDATE_EMAIL) !== false;
+}
