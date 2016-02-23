@@ -14,6 +14,7 @@ $(function(){
   $.ajax({
     url:'../../../api/events/event_list.php',
     type:'get',
+    cache:false,
     dataType:'json',
     success:function(r){
       console.log(r);
@@ -22,6 +23,7 @@ $(function(){
       $('#event-page>.content>.event>.section-desc').empty().append('<p>'+r[0].description+'</p>');
       $('#event-page>.content>.rules-prizes>.rules>.section-desc').empty().append(r[0].rules);
       $('#event-page>.content>.rules-prizes>.prizes>.section-desc').empty().append(r[0].prizes);
+      $('#event-page>.content>.large-event-pic>img').attr('src',r[0].image_url);
     },
     error:function(e){
       console.log(e);

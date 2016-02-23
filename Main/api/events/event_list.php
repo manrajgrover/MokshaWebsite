@@ -12,9 +12,9 @@ require_once '../inc/function.inc.php';
 $final_response = array();
 
 /*$category_id = (int)$_GET['category'];*/
-//WHERE `event_category`='$category_id'
+//WHERE `event_category`='$category_id'  ORDER BY `event_name`
 
-$query = "SELECT * FROM `events` ORDER BY `event_name`";
+$query = "SELECT * FROM `events`";
 $query_run = mysqli_query($connection, $query);
 
 while($query_row = mysqli_fetch_assoc($query_run)){
