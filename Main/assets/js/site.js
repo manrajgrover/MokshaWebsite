@@ -24,8 +24,9 @@ $(function(){
       $('#event-page>.content>.rules-prizes>.rules>.section-desc').empty().append(r[0].rules);
       $('#event-page>.content>.rules-prizes>.prizes>.section-desc').empty().append(r[0].prizes);
       $('#event-page>.content>.rules-prizes>.register-btn').attr('data-event',r[0].id);
+      $('#event-page>.content>.rules-prizes>.register-btn').attr('data-name',r[0].name);
       $('#event-page>.content>.large-event-pic>img').attr('src',r[0].image_url);
-      comp_itr = 1;
+      comp_itr = 0;
     },
     error:function(e){
       console.log(e);
@@ -33,6 +34,7 @@ $(function(){
   });
 
   $('#event-page>.right-clickable-box').click(function(){
+    ++comp_itr;
     if(comp_itr==comp.length)
     comp_itr=0;
     $('#event-page>.content>.event>header>h3').text(comp[comp_itr].name);
@@ -40,11 +42,12 @@ $(function(){
     $('#event-page>.content>.rules-prizes>.rules>.section-desc').empty().append(comp[comp_itr].rules);
     $('#event-page>.content>.rules-prizes>.prizes>.section-desc').empty().append(comp[comp_itr].prizes);
     $('#event-page>.content>.rules-prizes>.register-btn').attr('data-event',comp[comp_itr].id);
+    $('#event-page>.content>.rules-prizes>.register-btn').attr('data-name',comp[comp_itr].name);
     $('#event-page>.content>.large-event-pic>img').attr('src',comp[comp_itr].image_url);
-    ++comp_itr
   });
 
   $('#event-page>.left-clickable-box').click(function(){
+    --comp_itr;
     if(comp_itr==-1)
     comp_itr=comp.length-1;
     $('#event-page>.content>.event>header>h3').text(comp[comp_itr].name);
@@ -52,8 +55,8 @@ $(function(){
     $('#event-page>.content>.rules-prizes>.rules>.section-desc').empty().append(comp[comp_itr].rules);
     $('#event-page>.content>.rules-prizes>.prizes>.section-desc').empty().append(comp[comp_itr].prizes);
     $('#event-page>.content>.rules-prizes>.register-btn').attr('data-event',comp[comp_itr].id);
+    $('#event-page>.content>.rules-prizes>.register-btn').attr('data-name',comp[comp_itr].name);
     $('#event-page>.content>.large-event-pic>img').attr('src',comp[comp_itr].image_url);
-    --comp_itr
   });
 
 });

@@ -6,13 +6,14 @@
  * @Last Modified time: 2016-02-23 14:47:01
  */
 session_start();
-$_SESSION['user_id'] = 1;
 require_once '../inc/connection.inc.php';
 require_once '../inc/function.inc.php';
 
 //$user_id 	= (int)$_GET['user_id'];
 if(!isset($_SESSION['user_id'])){
-		echo json_encode(array(false));
+		echo json_encode(array(
+			'errcode'   =>   1
+		));
 		session_destroy();
 		die();
 }
@@ -22,7 +23,7 @@ $event_id 	= (int)$_GET['event_id'];
 $current_timestamp = time();
 
 $success 	= false;
-$already 	= false;
+$already 	= 0;
 $user 		= null;
 
 if($user_id > 0){
@@ -38,10 +39,11 @@ if($user_id > 0){
 
 }
 
+if((bool)$success==false)
+$already = 2;
 
 $final_response = array(
-	'success' 	=> (bool)$success,
-	'already'	=> (bool)$already,
+	'errcode'	=> $already,
 );
 session_destroy();
 echo json_encode($final_response);
