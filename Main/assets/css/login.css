@@ -72,8 +72,8 @@
   padding-top:40px;
   border-left:1px solid #e5e5e5;
   border-right:1px solid #e5e5e5;
-  background-color:#FFF;
-  opacity:0.9;
+  background-color: #E5E5E5;
+  /*opacity:0.9;*/
 }
 #reg-alert
 {
@@ -94,6 +94,8 @@
   font-size:18px;
   margin:10px;
   margin-left:15%;
+  padding: 10px;
+  background-color: #FFFFFF;
 }
 #moksha-login>.input-wrap>div.moksha-button
 {
@@ -111,6 +113,7 @@
   font-family: Mathlete;
 	src: url(../fonts/Mathlete-Skinny.otf);
   transition:background-color 0.4s,color 0.4s;
+  font-weight: 900;
 }
 #moksha-login>.input-wrap>div.moksha-button:hover
 {
