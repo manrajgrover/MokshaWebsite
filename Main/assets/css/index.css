@@ -4,7 +4,7 @@
 }
 
 *{
-	margin: 0 auto;
+	margin: 0;
 	padding: 0;
 }
 
@@ -399,6 +399,11 @@ img.small-event-pic{
 h1, h2, h3{
     font-size:xx-large;
 	font-family: Mathlete, serif;
+}
+
+#event-page>.event>ul>li:hover
+{
+	cursor:pointer;
 }
 
 /*

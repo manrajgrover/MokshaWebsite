@@ -45,3 +45,5 @@ $final_response = array(
 	'errcode'	=> $already,
 );
 echo json_encode($final_response);
+
+?>

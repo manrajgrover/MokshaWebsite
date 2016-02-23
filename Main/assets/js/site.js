@@ -1,62 +1,48 @@
 $(function(){
   var comp;
   var comp_itr;
+  var field;
+  var iterator;
   $.ajax({
-    url:'../../../api/events/categories.php',
+    url:'../../../api/events/getcompetitions.php',
     type:'get',
     dataType:'json',
     success:function(r){
-      console.log(r);
-    },
-    error:function(e){
-      console.log(e);
-    }
-  });
-  $.ajax({
-    url:'../../../api/events/event_list.php',
-    type:'get',
-    dataType:'json',
-    success:function(r){
-      console.log(r);
-      comp = r;
-      $('#event-register>.content>.event>header>h3').text(r[0].name);
-      $('#event-register>.content>.event>.section-desc').empty().append('<p>'+r[0].description+'</p>');
-      $('#event-register>.content>.rules-prizes>.rules>.section-desc').empty().append(r[0].rules);
-      $('#event-register>.content>.rules-prizes>.prizes>.section-desc').empty().append(r[0].prizes);
-      $('#event-register>.content>.rules-prizes>.register-btn').attr('data-event',r[0].id);
-      $('#event-register>.content>.rules-prizes>.register-btn').attr('data-name',r[0].name);
-      $('#event-register>.content>.large-event-pic>img').attr('src',r[0].image_url);
-      comp_itr = 0;
+      for (field in r){
+        var listParent = $('#event-page>.event[data-for="'+field+'"]>ul');
+        for(iterator in r[field]){
+          listParent.prepend('<li event-id="'+r[field][iterator].id+'">\> '+r[field][iterator].name+'</li>');
+        }
+      }
     },
     error:function(e){
       console.log(e);
     }
   });
 
-  $('#event-register>.right-clickable-box').click(function(){
-    ++comp_itr;
-    if(comp_itr==comp.length)
-    comp_itr=0;
-    $('#event-register>.content>.event>header>h3').text(comp[comp_itr].name);
-    $('#event-register>.content>.event>.section-desc').empty().append('<p>'+comp[comp_itr].description+'</p>');
-    $('#event-register>.content>.rules-prizes>.rules>.section-desc').empty().append(comp[comp_itr].rules);
-    $('#event-register>.content>.rules-prizes>.prizes>.section-desc').empty().append(comp[comp_itr].prizes);
-    $('#event-register>.content>.rules-prizes>.register-btn').attr('data-event',comp[comp_itr].id);
-    $('#event-register>.content>.rules-prizes>.register-btn').attr('data-name',comp[comp_itr].name);
-    $('#event-register>.content>.large-event-pic>img').attr('src',comp[comp_itr].image_url);
-  });
-
-  $('#event-register>.left-clickable-box').click(function(){
-    --comp_itr;
-    if(comp_itr==-1)
-    comp_itr=comp.length-1;
-    $('#event-register>.content>.event>header>h3').text(comp[comp_itr].name);
-    $('#event-register>.content>.event>.section-desc').empty().append('<p>'+comp[comp_itr].description+'</p>');
-    $('#event-register>.content>.rules-prizes>.rules>.section-desc').empty().append(comp[comp_itr].rules);
-    $('#event-register>.content>.rules-prizes>.prizes>.section-desc').empty().append(comp[comp_itr].prizes);
-    $('#event-register>.content>.rules-prizes>.register-btn').attr('data-event',comp[comp_itr].id);
-    $('#event-register>.content>.rules-prizes>.register-btn').attr('data-name',comp[comp_itr].name);
-    $('#event-register>.content>.large-event-pic>img').attr('src',comp[comp_itr].image_url);
+  $('#event-page>.event>ul').on('click','li',function(){
+    var event_id = Number($(this).attr('event-id'));
+    if(event_id!=0){
+      $.ajax({
+        url:'../../../api/events/event_list.php',
+        type:'get',
+        data:{event_id:event_id},
+        dataType:'json',
+        success:function(r){
+          console.log(r);
+          $('#event-register>.content>.event>header>h3').text(r.name);
+          $('#event-register>.content>.event>.section-desc').empty().append('<p>'+r.description+'</p>');
+          $('#event-register>.content>.rules-prizes>.rules>.section-desc').empty().append(r.rules);
+          $('#event-register>.content>.rules-prizes>.prizes>.section-desc').empty().append(r.prizes);
+          $('#event-register>.content>.rules-prizes>.register-btn').attr('data-event',r.id);
+          $('#event-register>.content>.rules-prizes>.register-btn').attr('data-name',r.name);
+          $('#event-register>.content>.large-event-pic>img').attr('src',r.image_url);
+        },
+        error:function(e){
+          console.log(e);
+        }
+      });
+    }
   });
 
 });

@@ -2,7 +2,12 @@
 {
   z-index:6;
   position:absolute;
-  top:60px;
+  top:70px;
   width:100%;
+  box-shadow: 0px 0px 7px #AAA5A5;
   display:none;
+}
+#event-register>.content
+{
+  padding:0px 10%;
 }
