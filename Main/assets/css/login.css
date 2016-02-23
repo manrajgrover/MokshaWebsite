@@ -96,6 +96,8 @@
 }
 #moksha-login>.input-wrap>div.moksha-button
 {
+  position: relative;
+  left: 15%;
   width:70%;
   height:40px;
   text-align:center;
