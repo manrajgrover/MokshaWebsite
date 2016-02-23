@@ -1,0 +1,30 @@
+$(function(){
+  var comp;
+  $.ajax({
+    url:'../../../api/events/categories.php',
+    type:'get',
+    dataType:'json',
+    success:function(r){
+      console.log(r);
+    },
+    error:function(e){
+      console.log(e);
+    }
+  });
+  $.ajax({
+    url:'../../../api/events/event_list.php',
+    type:'get',
+    dataType:'json',
+    success:function(r){
+      console.log(r);
+      comp = r;
+      $('#event-page>.content>.event>header>h3').text(r[0].name);
+      $('#event-page>.content>.event>.section-desc').empty().append('<p>'+r[0].description+'</p>');
+      $('#event-page>.content>.rules-prizes>.rules>.section-desc').empty().append(r[0].rules);
+      $('#event-page>.content>.rules-prizes>.prizes>.section-desc').empty().append(r[0].prizes);
+    },
+    error:function(e){
+      console.log(e);
+    }
+  });
+});
