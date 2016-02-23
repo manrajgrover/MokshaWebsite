@@ -81,9 +81,9 @@
   font-family: "Maven Pro",sans-serif;
   padding:1% 20px;
   margin-top:5px;
-  background-color:#FFF;
+  background-color:#E5E5E5;
   text-align:center;
-  opacity:0.9;
+  /*opacity:0.9;*/
 }
 #moksha-login>.input-wrap>input
 {
