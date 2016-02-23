@@ -3,6 +3,21 @@ $(function(){
   var comp_itr;
   var field;
   var iterator;
+  var loaded = 0;
+  var onImg = 1;
+
+  function slideshow(){
+    $('img.logo-img').css('display','none');
+    $('img.logo-img[data-mok="'+onImg+'"]').css('display','block');
+    ++onImg;
+
+    if(onImg==7)
+    onImg=1;
+    setTimeout(function(){
+      slideshow();
+    },300);
+  }
+
   $.ajax({
     url:'../../../api/events/getcompetitions.php',
     type:'get',
@@ -43,6 +58,12 @@ $(function(){
         }
       });
     }
+  });
+
+  $('.logo-img').load(function(){
+    ++loaded;
+    if(loaded==6)
+    slideshow();
   });
 
 });
