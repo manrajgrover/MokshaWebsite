@@ -42,3 +42,5 @@ $final_response = array(
 );
 
 echo json_encode($final_response);
+
+?>

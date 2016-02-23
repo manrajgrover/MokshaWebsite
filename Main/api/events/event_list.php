@@ -9,18 +9,19 @@
 require_once '../inc/connection.inc.php';
 require_once '../inc/function.inc.php';
 
-$final_response = array();
+$final_response = null;
 
 /*$category_id = (int)$_GET['category'];*/
 //WHERE `event_category`='$category_id'  ORDER BY `event_name`
+$event_id = $_GET['event_id'];
 
-$query = "SELECT * FROM `events`";
+$query = "SELECT * FROM `events` WHERE `event_id`=$event_id";
 $query_run = mysqli_query($connection, $query);
 
 while($query_row = mysqli_fetch_assoc($query_run)){
 	$image_url = ($query_row['image'] == '') ? null : decryptText($query_row['image']);
 
-	$temp_array = array(
+	$final_response = array(
 		'id'			=> (int)$query_row['event_id'],
 		'name'			=> decryptText($query_row['event_name']),
 		'image_url'		=> $image_url,
@@ -30,7 +31,9 @@ while($query_row = mysqli_fetch_assoc($query_run)){
 		'prizes'		=> decryptText($query_row['prizes'])
 		//'team_size'		=> (int)$query_row['team_size'],
 	);
-	array_push($final_response, $temp_array);
+	//array_push($final_response, $temp_array);
 }
 
 echo json_encode($final_response);
+
+?>

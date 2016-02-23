@@ -4,7 +4,7 @@
 }
 
 *{
-	margin: 0 auto;
+	margin: 0;
 	padding: 0;
 }
 
@@ -402,6 +402,11 @@ h1, h2, h3{
 	font-family: Mathlete, serif;
 }
 
+#event-page>.event>ul>li:hover
+{
+	cursor:pointer;
+}
+
 /*
 ******************************************************
 				ACCOMODATION
@@ -430,6 +435,12 @@ h1, h2, h3{
 */
 #contact-page{
 	min-height: 65%;
+}
+
+#contact-page.content
+{
+	padding-bottom:15px;
+	background-color:#FFF;
 }
 
 #contact-page div.contact{
@@ -653,6 +664,11 @@ h1, h2, h3{
 
 	.register-btn{
 		font-size:7vh;
+	}
+
+	.register-btn:hover
+	{
+		cursor:pointer;
 	}
 
 	#closeloginpop{

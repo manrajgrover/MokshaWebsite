@@ -9,7 +9,7 @@
 require_once '../inc/connection.inc.php';
 require_once '../inc/function.inc.php';
 
-function isValidEmail($email){ 
+function isValidEmail($email){
     return filter_var($email, FILTER_VALIDATE_EMAIL) !== false;
 }
 
@@ -41,3 +41,5 @@ $final_response = array(
 );
 
 echo json_encode($final_response);
+
+?>
