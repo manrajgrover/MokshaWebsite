@@ -36,7 +36,7 @@ $('#moksha-login').on('click','.head>.tab',function(){
     $('#moksha-login>.input-wrap').empty();
     if(data_tab=="LogIn")
     {
-      $('#moksha-login>.input-wrap').append('<input id="phone-log" type="text" placeholder="Phone"><br>\
+      $('#moksha-login>.input-wrap').append('<input id="phone-log" type="text" placeholder="Email/Moksha-ID"><br>\
 			<input id="passphrase" type="password" placeholder="Password"><br><div id="get-logIn" class="moksha-button">Log In</div>');
     }
     else
@@ -66,7 +66,8 @@ $('#moksha-login>.input-wrap').on('click','#get-Register',function(){
     success:function(r){
       if(r.success==true)
       {
-        alert('Successfully Registered. Login to Continue');
+		var moksha_id = parseInt(r.moksha_id);
+        alert('Successfully Registered. Your Moksha ID is ' + moksha_id + '. Login to Continue');
       }
       else {
         alert('Invalid or existing Credentials');

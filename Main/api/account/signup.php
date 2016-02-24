@@ -19,13 +19,16 @@ $email_valid = (bool)isValidEmail($email);
 
 $success = false;
 $duplicate = false;
+$moksha_id = 0;
 
 if($email_valid && !empty($name) && !empty($password) && !empty($phone) && !empty($college)){
 	$query = "INSERT INTO `users` (`name`,`email`,`password`,`phone`,`college`) VALUES ('$name','$email','$password','$phone','$college')";
 
 	if(mysqli_query($connection, $query)){
 		$success = true;
-	} else {
+		$moksha_id = (int)mysqli_insert_id($connection);
+	}
+	else {
 		$duplicate = true;
 	}
 }
@@ -34,6 +37,7 @@ $final_response = array(
 	'success' 		=> (bool)$success,
 	'duplicate' 	=> (bool)$duplicate,
 	'email_valid' 	=> (bool)$email_valid,
+	'moksha_id'		=> (int)$moksha_id,
 );
 
 echo json_encode($final_response);
