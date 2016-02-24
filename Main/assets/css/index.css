@@ -580,7 +580,7 @@ p.contact-text {
 	}
 
 	.content, .event-content{
-		overflow:scroll;
+	/*	overflow:scroll;*/
 		margin-left:0;
 		margin-right:0;
 	}
