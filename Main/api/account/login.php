@@ -17,23 +17,38 @@ if(isset($_SESSION['user_id'])){
 	die();
 }
 
-$phone 		= clean_string($_GET['phone']);
+$success = false;
+$user 		= null;
+
+if((bool)isValidEmail(clean_string($_GET['user_var']))){
+	$moksha_id = false;
+	$user_email = clean_string($_GET['user_var']);
+} else {
+	$moksha_id = (int)$_GET['user_var'];
+	$user_email = false;
+}
 $password 	= encrypt_data(clean_string($_GET['pass']));
 
-$query = "SELECT * FROM `users` WHERE `phone`='$phone' AND `password`='$password' LIMIT 1";
-$query_row = mysqli_fetch_assoc(mysqli_query($connection, $query));
-
-if(isset($query_row)){
-	$_SESSION['user_id']=(int)$query_row['user_id'];
-	$success = true;
-	$user = array(
-		'user_id'	=> (int)$query_row['user_id'],
-		'name'		=> clean_string($query_row['name']),
-		'college'	=> clean_string($query_row['college']),
-	);
+if(!$user_email && $moksha_id <= 0){
+	//
 } else {
-	$success 	= false;
-	$user 		= null;
+	if($moksha_id == false){
+		$query = "SELECT * FROM `users` WHERE `email`='$user_email' AND `password`='$password' LIMIT 1";
+	} else {
+		$query = "SELECT * FROM `users` WHERE `user_id`='$moksha_id' AND `password`='$password' LIMIT 1";
+	}
+	$query_row = mysqli_fetch_assoc(mysqli_query($connection, $query));
+
+	if(isset($query_row)){
+		$_SESSION['user_id']=(int)$query_row['user_id'];
+		
+		$success = true;
+		$user = array(
+			'user_id'	=> (int)$query_row['user_id'],
+			'name'		=> clean_string($query_row['name']),
+			'college'	=> clean_string($query_row['college']),
+		);
+	}
 }
 
 $final_response = array(

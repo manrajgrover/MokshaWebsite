@@ -34,9 +34,9 @@
   z-index:6;
   width:40%;
   left:25%;
-  height:calc(75% - 100px);
+  height:calc(85% - 100px);
   padding:50px;
-  top:15%;
+  top:10%;
   background:url('../images/bg.png');
   box-shadow:0px 0px 8px #322F2F;
 
@@ -68,21 +68,22 @@
 #moksha-login>.input-wrap
 {
   width:calc(100% - 2px);
-  height:calc(75% - 20px);
-  padding-top:40px;
+  height:calc(80% - 20px);
+  padding-top:10px;
   border-left:1px solid #e5e5e5;
   border-right:1px solid #e5e5e5;
-  background-color:#FFF;
-  opacity:0.9;
+  background-color: #E5E5E5;
+  /*opacity:0.9;*/
 }
 #reg-alert
 {
   color:#CE3939;
+  font-family: "Maven Pro",sans-serif;
   padding:1% 20px;
   margin-top:5px;
-  background-color:#FFF;
+  background-color:#E5E5E5;
   text-align:center;
-  opacity:0.9;
+  /*opacity:0.9;*/
 }
 #moksha-login>.input-wrap>input
 {
@@ -91,8 +92,10 @@
   border-bottom:1px solid #e5e5e5;
   outline:none;
   font-size:18px;
-  margin:10px;
+  margin:5px;
   margin-left:15%;
+  padding: 10px;
+  background-color: #FFFFFF;
 }
 #moksha-login>.input-wrap>div.moksha-button
 {
@@ -110,6 +113,7 @@
   font-family: Mathlete;
 	src: url(../fonts/Mathlete-Skinny.otf);
   transition:background-color 0.4s,color 0.4s;
+  font-weight: 900;
 }
 #moksha-login>.input-wrap>div.moksha-button:hover
 {

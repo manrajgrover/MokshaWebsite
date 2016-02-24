@@ -1,11 +1,13 @@
 #event-register
 {
   z-index:6;
-  position:absolute;
+  position:fixed;
   top:70px;
   width:100%;
+  max-height:calc(100% - 70px);
   box-shadow: 0px 0px 7px #AAA5A5;
   display:none;
+  overflow-y:scroll;
 }
 #event-register>.content
 {

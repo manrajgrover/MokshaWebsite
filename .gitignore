@@ -3,3 +3,6 @@ Main/bower_components
 
 #mysql database connection file 
 connection.inc.php
+
+#php error logs
+error_log

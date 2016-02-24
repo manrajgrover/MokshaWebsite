@@ -3,11 +3,28 @@ $('#top').on('click','.login.profile',function(){
 });
 
 $('#lightbox').click(function(){
-  $('#lightbox,#moksha-login,#closeloginpop,#event-register').fadeOut();
+  $('#lightbox,#moksha-login,#closeloginpop,#event-register').fadeOut(function(){
+    $('#event-register>.content>.event>header>h3').text('');
+    $('#event-register>.content>.event>.section-desc').empty();
+    $('#event-register>.content>.rules-prizes>.rules>.section-desc').empty();
+    $('#event-register>.content>.rules-prizes>.prizes>.section-desc').empty();
+    $('#event-register>.content>.rules-prizes>.register-btn').attr('data-event',-1);
+    $('#event-register>.content>.rules-prizes>.register-btn').attr('data-name',null);
+    $('#event-register>.content>.large-event-pic>img').css('display','none');
+  });
+
 });
 
 $('#closeloginpop').click(function(){
-  $('#lightbox,#moksha-login,#closeloginpop,#event-register').fadeOut();
+  $('#lightbox,#moksha-login,#closeloginpop,#event-register').fadeOut(function(){
+    $('#event-register>.content>.event>header>h3').text('');
+    $('#event-register>.content>.event>.section-desc').empty();
+    $('#event-register>.content>.rules-prizes>.rules>.section-desc').empty();
+    $('#event-register>.content>.rules-prizes>.prizes>.section-desc').empty();
+    $('#event-register>.content>.rules-prizes>.register-btn').attr('data-event',-1);
+    $('#event-register>.content>.rules-prizes>.register-btn').attr('data-name',null);
+    $('#event-register>.content>.large-event-pic>img').css('display','none');
+  });
 });
 
 $('#moksha-login').on('click','.head>.tab',function(){
@@ -67,7 +84,7 @@ $('#moksha-login>.input-wrap').on('click','#get-logIn',function(){
   $.ajax({
     url:'../../../api/account/login.php',
     type:'get',
-    data:{pass:pass,phone:phone},
+    data:{pass:pass,user_var:phone},
     dataType:'json',
     success:function(r){
       if(r.success==true)

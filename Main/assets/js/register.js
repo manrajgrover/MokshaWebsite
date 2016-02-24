@@ -22,8 +22,8 @@ $(function(){
     });
   });
 
-  $('#event-page>.event>ul').on('click','li',function(){
-    $('#lightbox,#event-register,#closeloginpop').fadeIn();
-  });
+  /*$('#event-page>.event>ul').on('click','li',function(){
+
+  });*/
 
 });

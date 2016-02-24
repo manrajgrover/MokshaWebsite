@@ -3,6 +3,21 @@ $(function(){
   var comp_itr;
   var field;
   var iterator;
+  var loaded = 0;
+  var onImg = 1;
+
+  function slideshow(){
+    $('img.logo-img').css('display','none');
+    $('img.logo-img[data-mok="'+onImg+'"]').css('display','block');
+    ++onImg;
+
+    if(onImg==7)
+    onImg=1;
+    setTimeout(function(){
+      slideshow();
+    },250);
+  }
+
   $.ajax({
     url:'../../../api/events/getcompetitions.php',
     type:'get',
@@ -37,6 +52,10 @@ $(function(){
           $('#event-register>.content>.rules-prizes>.register-btn').attr('data-event',r.id);
           $('#event-register>.content>.rules-prizes>.register-btn').attr('data-name',r.name);
           $('#event-register>.content>.large-event-pic>img').attr('src',r.image_url);
+          $('#event-register>.content>.large-event-pic>img').load(function(){
+            $(this).css('display','block');
+          });
+          $('#lightbox,#event-register,#closeloginpop').fadeIn();
         },
         error:function(e){
           console.log(e);
@@ -45,4 +64,9 @@ $(function(){
     }
   });
 
+  $('.logo-img').load(function(){
+    ++loaded;
+  });
+
+  slideshow();
 });

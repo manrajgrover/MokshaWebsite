@@ -2,18 +2,14 @@
 <html>
 <head>
 	<title>Moksha'16</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+	<meta name="viewport" content="width=device-width,initial-scale=1, maximum-scale=1,user-scalable=no"/>
 	<link rel="stylesheet" href="assets/css/index.css">
 	<link rel="stylesheet" href="assets/css/decorations.css">
 	<link rel="stylesheet" href="assets/css/master.css">
 	<link rel="stylesheet" href="assets/css/login.css">
 	<link rel="stylesheet" href="assets/css/register.css">
-	<script src="bower_components/jquery/dist/jquery.min.js"></script>
-	<script src="assets/js/responsive.js"></script>
+	<link ref="shortcut icon" href="assets/images/favicon.ico" type="image/x-icon">
 	<link href='https://fonts.googleapis.com/css?family=Maven+Pro' rel='stylesheet' type='text/css'>
-
-	<meta name="viewport" content="width=device-width,initial-scale=1, maximum-scale=1,user-scalable=no"/>
-
 </head>
 <body>
 
@@ -46,9 +42,13 @@
     	</header>
 
 		<div class="content" id="competitions-page">
-			<div id="placeholder-img">
-				<img src="assets/images/moksha_logo.png"/>
-			</div>
+			<img class="logo-img" data-mok="1" src="assets/images/mok1.png"/>
+			<img class="logo-img" data-mok="2" src="assets/images/mok2.png"/>
+			<img class="logo-img" data-mok="3" src="assets/images/mok3.png"/>
+			<img class="logo-img" data-mok="4" src="assets/images/mok4.png"/>
+			<img class="logo-img" data-mok="5" src="assets/images/mok5.png"/>
+			<img class="logo-img" data-mok="6" src="assets/images/mok6.png"/>
+			<div id="headline">As Colourful as Your Memories</div>
 			<!--div class="event">
 	<div class="content" id="competitions-page">
 
@@ -135,7 +135,7 @@
 
 			<div class="content main-content">
 				<section id="music" class="comp-category main-description event">
-					<header><h3>Coming Soon!</h3></header>
+					<header><h1>Coming Soon!</h1></header>
 					<div class="section-desc category">
 						<!--p>Lorem Ipsum is simply a dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a specimen book. It has survived not only five centuries, but also the leap into electronic typesetting remaining essentially unchanged</p>
 						<ul>
@@ -143,7 +143,7 @@
 							<li class="event_item">-Avalanche</li>
 						</ul-->
 					</div>
-					<img class="pokemon" src="assets/images/jigglypuff.png" alt="Jigglypuff"/>
+					<img class="pokemon" src="assets/images/comingsoon.png" alt="comingsoon"/>
 				</section>
 
 				<!--section id="dhwani" class="comp-category blue main-description event">
@@ -177,12 +177,9 @@
 
 		<div class="event" data-for="Theatre">
 			<h1>THEATRE</h1>
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+			<p>We are giving you an impeccable pedestal to showcase your expressions, each strain of
+			emotion and an audience that is willing to lose into the mesmerizing bliss of your act. In return all we
+			expect of you is to be hypnotic in your enactment. The events under this category are Soch and Parwaz.</p>
 			<ul>
 				<!--li>-DHWANI</li>
 				<li>-AVALANCHE</li>
@@ -195,12 +192,11 @@
 
 		<div class="event" data-for="Music">
 			<h1>MUSIC</h1>
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+			<p>Music is to the soul what the stars are to the sky. Do you have it in you to take centre stage, close
+			your eyes and just let the musical magic unfurl? With thousands of eyes on you, can you strike all the
+			right chords to make the crowd sway to your tempo? Take everyone's heart away with your magical
+			notes and set the stage on fire this Moksha. The events under this category are- Saaz, Symphony,
+			Harmony, DJ Wars, Melody, Tarang and Avalanche.</p>
 			<ul>
 				<!--li>-THEATRE FIESTA</li>
 				<li>-SOCH</li>
@@ -214,12 +210,9 @@
 		<div class="border"></div>
 		<div class="event" data-for="Dance">
 			<h1>DANCE</h1>
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+			<p>Dance is the art of expression without words, it's about communicating as the soul throbs to the
+			rhythm of the movement. Each year more than 50 teams participate to share this passion at Moksha.
+			The dance arena has five events under its aegis – Mudra, Oorja, Kalakriti, Step up and Dance Off.</p>
 			<ul>
 				<!--li>-STREET DANCE</li>
 				<li>-MUDRA</li>
@@ -233,52 +226,48 @@
 		<div class="border"></div>
 		<div class="event" data-for="Lifestyle">
 			<h1>LIFESTYLE</h1>
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+			<p>Get a glimpse of all the glam and lights and pomp and show - all on one stage - as some
+			beauties and some hunks put their best foot forward. It's chic, it's elegant, it's sparkling, and it’s
+			gleaming. It is something which you can't take your eyes off. The lifestyle events promise to bring to you
+			the glitz and the oomph, the poise and the confidence, the shock and the awe. So, let yourself get blown
+			away by the mesmerizing effect of the ultimate crowd-puller, this MOKSHA! The events under this
+			header are Rouge and Mr and Ms Moksha.</p>
 			<ul>
 				<!--li>-TREASURE HUNT</li>
 				<li>-PAINT BALL</li>
 				<li>MORE...</li>
 				<!--img src="assets/images/arrow.png" alt="arrow" class="arrow"-->
-				<img src="assets/images/Lifestyle.png" alt="lifestyle" class="pokemon">
+				<img src="assets/images/Lifestyle.png" alt="snorlax" class="pokemon">
 			</ul>
 		</div>
 
 		<div class="event" data-for="Finearts">
 			<h1>FINE ARTS</h1>
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+			<p>Have you ever wondered if you could capture a moment in front of your eyes without using a
+			camera? Your answer to that question reveals a surprising amount about how you integrate your right
+			and left hemispheres of brain. Then let’s see how you interpret the scene in front of you, its tonal
+			values. Communicate the feelings on a piece of paper. The events being organised are- Rangoli, T Shirt
+			Painting, Face Painting, Poster Making, Art Exhibition, Photography Exhibition and On The Spot
+			Photography.</p>
 			<ul>
 				<!--li>-TREASURE HUNT</li>
 				<li>-PAINT BALL</li>
 				<li>MORE...</li>
 				<!--img src="assets/images/arrow.png" alt="arrow" class="arrow"-->
-				<img src="assets/images/FineArts.png" alt="finearts" class="pokemon">
+				<img src="assets/images/FineArts.png" alt="snorlax" class="pokemon">
 			</ul>
 		</div>
 		<div class="border"></div>
 		<div class="event" data-for="Online">
 			<h1>ONLINE</h1>
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+			<p>If you are the wizard of the digital world, we provide you the right platform to showcase
+			your wizardry. The events under this banner are- Treasure Hunt and Online Photography.</p>
 			<ul>
 				<!--li>-TREASURE HUNT</li>
 				<li>-PAINT BALL</li>
 				<li>MORE...</li>
 				<!--img src="assets/images/arrow.png" alt="arrow" class="arrow"-->
-				<img src="assets/images/Online.png" alt="online" class="pokemon">
+				<img src="assets/images/Online.png" alt="snorlax" class="pokemon">
 			</ul>
 		</div>
 				<!--div class="left-clickable-box">
@@ -334,7 +323,7 @@
 						<li>Accommodation would be provided in fully secured hostel rooms in the campus of NSIT and these facilities would be separate for boys and girls.</li>
 						<li>Each student, registered under the Accommodation Policy, would be provided with mattresses, bedding and pillow. It shall be noted that no toiletries or buckets would be provided.</li>
 						<li>Payment for accommodation would only be accepted in cash (no online registration or card payment are accepted) and the procedure would take place at the Documentation Desk to be set up on campus.</li>
-						<li>All registered students can avail the accommodation services from 9th – 13th March 2016.</li>
+						<li>All registered students can avail the accommodation services from 9th - 13th March 2016.</li>
 						<li>The check-in time for registration at the hostel desk is 12 PM and the checkout time is 10 AM on the following day. At the time of check-out, the registered students are required to return all the commodities provided to them by the organizers.</li>
 						<li>The accommodation charges are INR 200 per day per participant including 4 meals per day.</li>
 						<li>On reaching the NSIT campus, each registered student would be given an Accommodation Pass after the payment of the aforementioned charges. It is mandatory for all registered students to carry this pass throughout their stay at the campus.</li>
@@ -343,9 +332,9 @@
 						<li>Moksha, NSIT does not bear any responsibility for any material loss during your stay at the campus. It is recommended that you carry minimum amount of valuable items.</li>
 						<li>Please be cautious during the stay. The registered student is responsible and liable for any breakages or damage that is caused during their stay in the allotted room, including any accidents that may occur. If any damage is caused, the concerned student is liable to full cost of replacement or repair.</li>
 					</ol>
-					<p>For any queries contact :<br>
-						Vigitesh- 9560926605<br>
-						Soumitra- 9560652244
+					<p class="contact-text">For any queries contact :<br>
+						Vigitesh - 9560926605<br>
+						Soumitra - 9560652244
 					</p>
 				</section>
 			</div>
@@ -354,23 +343,39 @@
 		<section class="main-content">
 			<br></br>
 			<h3>Contact Details</h3>
-			<div class="contact">For any event related queries :<br><br>Please email us at<br>
-				eventmanagement.moksha@gmail.com<br> OR call
+			<br>
+			<div class="contact">
+				<u>For star night related queries</u><br>
+				Contact<br>
+				<ol>
+					<li>Kunal - 9873135353</li>
+					<li>Jatin - 8800952501</li>
+				</ol>
+			</div>
+			<hr>
+			<div class="contact">
+				<u>For any event related queries</u><br>
+				Please email us at<br>
+				<a href="mailto:eventmanagement.moksha@gmail.com">eventmanagement.moksha@gmail.com</a><br> OR call
 				<ol>
 					<li>Soumitra - 9560652244</li>
 				</ol>
 			</div>
-
-			<div class="contact">For any sponsorship related queries :<br><br>Please email us at<br>
-				spons.moksha@gmail.com<br> OR call
+			<hr>
+			<div class="contact">
+				<u>For any sponsorship related queries</u><br>
+				Please email us at<br>
+				<a href="mailto:spons.moksha@gmail.com">spons.moksha@gmail.com</a><br> OR call
 				<ol>
 					<li>Abhishek - 9873547741</li>
 					<li>Namrta - 9711470519</li>
 				</ol>
 			</div>
-
-			<div class="contact">For any general queries :<br><br>Please email us at<br>
-				publicrelations.moksha@gmail.com<br> OR call
+			<hr>
+			<div class="contact">
+				<u>For any general queries</u><br>
+				Please email us at<br>
+				<a href="mailto:publicrelations.moksha@gmail.com">publicrelations.moksha@gmail.com</a><br> OR call
 				<ol>
 					<li>Shwetank - 9953785202</li>
 					<li>Rahul - 9910843248</li>
@@ -389,7 +394,7 @@
 			    <div class="tab" data-tab="Register">Register</div>
 			  </div>
 			  <div class="input-wrap">
-			    <input id="phone-log" type="text" placeholder="Phone"><br>
+			    <input id="phone-log" type="text" placeholder="Email/Moksha-ID"><br>
 			    <input id="passphrase" type="password" placeholder="Password"><br>
 			    <div id="get-logIn" class="moksha-button">Log In</div>
 			    <!--div id="get-register" class="moksha-button">Register</div-->
@@ -439,7 +444,8 @@
 
 			</div>
 			<!------------------------------>
-
+<script src="bower_components/jquery/dist/jquery.min.js"></script>
+<script src="assets/js/responsive.js"></script>
 <script src="assets/js/login.js"></script>
 <script src="assets/js/register.js"></script>
 <script src="assets/js/nav.js"></script>
