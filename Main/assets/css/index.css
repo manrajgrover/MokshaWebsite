@@ -464,43 +464,64 @@ h1, h2, h3{
 }
 
 /*
-*********************************************************
-						HOME
-*********************************************************
+****************************************************
+				MEGAEVENT
+****************************************************
 */
+
 @font-face{
 	font-family:'Home School';
 	src:url('../fonts/Home School.otf');
 }
 
-#home-page>.main-content
-{
-	width: 100%;
-	height: 70vh;
-	background:url('../images/home_bg.jpg');
-	background-size:100% 100%;
+#mega-events{
+	position: absolute;
+	background:whitesmoke;;
+	display: flex;
+	flex-flow:column;
+	width:80%;
+	left:10%;
+	font-size: large;
 }
 
-#scrap-logo{
-	margin-left: 25vw;
-	margin-top:5vh;
-	height: 30vh;
+#mega-events>img{
+	margin-left: auto;
+	margin-right: auto;
 }
 
-#dora{
-	position:absolute;
-	bottom:0;
-	height:50%;
+#event-logo{
+	width:20vw;
+	height: 20vh;
 }
 
-#home-page p{
-	/*background: yellow;*/
-	font-family: 'Home School';
-	font-size:10vh;
+#megaevent-pic{
+	width:70vw;
+	height: 50vh;
+	margin-left: 1.5vw;
+}
+
+#mega-events>p{
 	text-align: center;
-	color:blueviolet;
-	padding-top:0;
+	font-family: 'Home School';
+	font-size: xx-large;
 }
+
+#small-events{
+	display: flex;
+	flex-flow:wrap;
+}
+
+.small-events-list{
+	max-width:30%;
+	margin:1%;
+}
+
+.small-events-list>img{
+	width:100%;
+	height: 25vh;
+	padding: 0;
+}
+
 /*
 *******************************************************
 				RESPONSIVENESS
@@ -688,12 +709,15 @@ h1, h2, h3{
 		height:65%!important;
 	}
 	
-	#dora, #scrap-logo{
-		max-height: 20vh;
+	#small-events{
+		margin:4vw;
+		font-size: small;
 	}
 	
-	#scrap-logo{
-		margin-left: 12vw;
+	.small-events-list{
+		min-width: 35vw;
+		margin:0;
+		margin-right:5px;
 	}
 
 }
