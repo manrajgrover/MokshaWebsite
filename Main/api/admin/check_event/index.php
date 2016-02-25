@@ -80,6 +80,20 @@ if($event_id > 0){
 	}
 ?>
 			</div>
+			<div class="component">
+				<ul>
+<?php
+
+	$query_main = "SELECT `event_id`,`event_name` FROM `events` ORDER BY `event_name`";
+	$query_main_run = mysqli_query($connection, $query_main);
+
+	while($query_main_row = mysqli_fetch_assoc($query_main_run)){
+		echo '<li><a href="index.php?event=' . (int)$query_main_row['event_id'] . '">' . trim($query_main_row['event_name']) . '</a></li>';
+	}
+
+?>
+				</ul>
+			</div>
 		</div><!-- /container -->
 		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
 		<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-throttle-debounce/1.1/jquery.ba-throttle-debounce.min.js"></script>
