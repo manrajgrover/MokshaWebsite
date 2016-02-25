@@ -55,11 +55,13 @@ if($event_id > 0){
 							<th>Moksha ID</th>
 							<th>Name</th>
 							<th>College</th>
+							<th>Phone</th>
+							<th>Email ID</th>
 						</tr>
 					</thead>
 					<tbody>
 <?php
-		$query_select = "SELECT R.user_id, U.name, U.college FROM event_registration R INNER JOIN users U ON R.user_id = U.user_id WHERE R.event_id='$event_id' ORDER BY R.timestamp DESC";
+		$query_select = "SELECT R.user_id, U.name, U.college, U.phone, U.email FROM event_registration R INNER JOIN users U ON R.user_id = U.user_id WHERE R.event_id='$event_id' ORDER BY R.timestamp DESC";
 		$query_select_run = mysqli_query($connection, $query_select);
 
 		$i = 1;
@@ -69,6 +71,8 @@ if($event_id > 0){
 				<td class="user-email">MOK-' . (int)trim($query_select_row['user_id']) . '</td>
 				<td class="user-phone">' . trim($query_select_row['name']) . '</td>
 				<td class="user-mobile">' . trim($query_select_row['college']) . '</td>
+				<td class="user-mobile">' . trim($query_select_row['phone']) . '</td>
+				<td class="user-mobile">' . trim($query_select_row['email']) . '</td>
 			</tr>';
 		}
 ?>
