@@ -428,6 +428,10 @@ img.small-event-pic{
     font-family: "Mathlete";
     font-size: 3em;
 }
+.register-btn:hover
+{
+	cursor:pointer;
+}
 
 h1, h2, h3{
     font-size:xx-large;
@@ -665,11 +669,6 @@ p.contact-text {
 
 	.register-btn{
 		font-size:7vh;
-	}
-
-	.register-btn:hover
-	{
-		cursor:pointer;
 	}
 
 	#closeloginpop{
