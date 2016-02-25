@@ -105,8 +105,8 @@ nav li{
 	 display: block;
 	 font-family: "Mathlete";
 	 font-size: 1.5em;
-	 padding-left:5%;
-	 padding-right: 5%;
+	 /*padding-left:5%;*/
+	 padding-right: 7%;
    list-style-type: none;
 
 
@@ -332,6 +332,7 @@ nav li:hover
 
 .event-content{
 	margin: 0;
+	margin-top:30px;
 	padding: 0;
     display:flex;
 		flex-wrap:wrap;
@@ -507,6 +508,65 @@ p.contact-text {
 }
 
 /*
+****************************************************
+				MEGAEVENT
+****************************************************
+*/
+
+@font-face{
+	font-family:'Home School';
+	src:url('../fonts/Home School.otf');
+}
+
+#mega-events{
+	position: absolute;
+	background:whitesmoke;;
+	display: flex;
+	flex-flow:column;
+	width:80%;
+	left:10%;
+	font-size: large;
+}
+
+#mega-events>img{
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#event-logo{
+	width:20vw;
+	height: 20vh;
+}
+
+#megaevent-pic{
+	width:70vw;
+	height: 50vh;
+	margin-left: 1.5vw;
+}
+
+#mega-events>p{
+	text-align: center;
+	font-family: 'Home School';
+	font-size: xx-large;
+}
+
+#small-events{
+	display: flex;
+	flex-flow:wrap;
+}
+
+.small-events-list{
+	max-width:30%;
+	margin:1%;
+}
+
+.small-events-list>img{
+	width:100%;
+	height: 25vh;
+	padding: 0;
+}
+
+/*
 *******************************************************
 				RESPONSIVENESS
 *******************************************************
@@ -524,7 +584,7 @@ p.contact-text {
 	}
 
 	.content, .event-content{
-		overflow:scroll;
+	/*	overflow:scroll;*/
 		margin-left:0;
 		margin-right:0;
 	}
@@ -686,6 +746,17 @@ p.contact-text {
 
 	#moksha-login>.input-wrap{
 		height:65%!important;
+	}
+	
+	#small-events{
+		margin:4vw;
+		font-size: small;
+	}
+	
+	.small-events-list{
+		min-width: 35vw;
+		margin:0;
+		margin-right:5px;
 	}
 
 }

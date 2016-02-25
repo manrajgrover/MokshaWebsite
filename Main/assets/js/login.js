@@ -66,7 +66,8 @@ $('#moksha-login>.input-wrap').on('click','#get-Register',function(){
     success:function(r){
       if(r.success==true)
       {
-        alert('Successfully Registered. Login to Continue');
+		var moksha_id = parseInt(r.moksha_id);
+        alert('Successfully Registered. Your Moksha ID is ' + moksha_id + '. Login to Continue');
       }
       else {
         alert('Invalid or existing Credentials');

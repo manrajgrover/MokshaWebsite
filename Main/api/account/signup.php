@@ -16,6 +16,7 @@ $email_valid = (bool)isValidEmail($email);
 $success = false;
 $duplicate = false;
 $moksha_id = 0;
+
 if($email_valid && !empty($name) && !empty($password) && !empty($phone) && !empty($college)){
 	$query = "INSERT INTO `users` (`name`,`email`,`password`,`phone`,`college`) VALUES ('$name','$email','$password','$phone','$college')";
 	if(mysqli_query($connection, $query)){
