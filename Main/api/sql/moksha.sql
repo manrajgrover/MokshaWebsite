@@ -2,9 +2,9 @@
 -- version 4.0.10.7
 -- http://www.phpmyadmin.net
 --
--- Host: localhost:3306
--- Generation Time: Feb 22, 2016 at 12:00 PM
--- Server version: 5.6.22-72.0-log
+-- Host: localhost
+-- Generation Time: Mar 05, 2016 at 05:21 AM
+-- Server version: 5.5.45-cll-lve
 -- PHP Version: 5.4.31
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
@@ -17,10 +17,23 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8 */;
 
 --
--- Database: `csinseew_moksha`
+-- Database: `moksha_main`
 --
-CREATE DATABASE IF NOT EXISTS `csinseew_moksha` DEFAULT CHARACTER SET latin1 COLLATE latin1_swedish_ci;
-USE `csinseew_moksha`;
+CREATE DATABASE IF NOT EXISTS `moksha_main` DEFAULT CHARACTER SET latin1 COLLATE latin1_swedish_ci;
+USE `moksha_main`;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `event-id-category`
+--
+
+DROP TABLE IF EXISTS `event-id-category`;
+CREATE TABLE IF NOT EXISTS `event-id-category` (
+  `event_name` varchar(50) NOT NULL,
+  `event_id` int(11) NOT NULL,
+  `event_category` varchar(50) NOT NULL
+) ENGINE=MyISAM DEFAULT CHARSET=latin1;
 
 -- --------------------------------------------------------
 
@@ -37,8 +50,11 @@ CREATE TABLE IF NOT EXISTS `events` (
   `descp` text,
   `date` varchar(300) DEFAULT NULL,
   `team_size` varchar(50) DEFAULT NULL,
+  `rules` text NOT NULL,
+  `prizes` text NOT NULL,
+  `registration_over` int(1) NOT NULL DEFAULT '0',
   PRIMARY KEY (`event_id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=22 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=24 ;
 
 -- --------------------------------------------------------
 
@@ -66,7 +82,7 @@ CREATE TABLE IF NOT EXISTS `event_registration` (
   `user_id` int(11) NOT NULL,
   `timestamp` varchar(200) NOT NULL,
   PRIMARY KEY (`event_registration_id`)
-) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=2 ;
+) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=526 ;
 
 -- --------------------------------------------------------
 
@@ -107,14 +123,15 @@ CREATE TABLE IF NOT EXISTS `team-users` (
 DROP TABLE IF EXISTS `users`;
 CREATE TABLE IF NOT EXISTS `users` (
   `user_id` int(11) NOT NULL AUTO_INCREMENT,
+  `mok_id` varchar(20) NOT NULL,
   `name` varchar(1000) NOT NULL,
-  `email` varchar(1000) NOT NULL,
+  `email` varchar(200) NOT NULL,
   `password` varchar(1000) NOT NULL,
   `phone` varchar(50) NOT NULL,
   `college` varchar(1000) NOT NULL,
   PRIMARY KEY (`user_id`),
-  UNIQUE KEY `phone` (`phone`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=21 ;
+  UNIQUE KEY `email` (`email`)
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=3256 ;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
