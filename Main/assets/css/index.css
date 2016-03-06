@@ -590,6 +590,10 @@ p.contact-text {
 	text-align: center;
 	font-weight: bold;
 }
+#sponsors-page>section.main-content>div.special>img{
+	margin-left: auto;
+	margin-right: auto;
+}
 
 #sponsors-page>section>div:not(.special)>div{
 	width:25%;
@@ -601,6 +605,18 @@ p.contact-text {
 
 #sponsors-page #associate-sponsors>div{
 	width:33%;
+}
+
+#sponsors-page #associate-sponsors img{
+	height: 70px;
+}
+
+#sponsors-page #ticketing img, #sponsors-page #title-sponsor img{
+	height: 100px;
+}
+
+#ace{
+	background:blue;
 }
 
 /*
