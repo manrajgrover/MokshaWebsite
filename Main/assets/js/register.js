@@ -2,7 +2,7 @@ $(function(){
   $('#event-register>.content>.rules-prizes').on('click','.register-btn',function(){
     var el = $(this);
     $.ajax({
-      url:'../../../api/register/new.php',
+      url:'../../api/register/new.php',
       type:'get',
       data:{event_id:Number(el.attr('data-event'))},
       dataType:'json',

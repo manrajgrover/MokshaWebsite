@@ -42,7 +42,7 @@ $('#moksha-login').on('click','.head>.tab',function(){
     else
     {
       $('#moksha-login>.input-wrap').append('<input id="name-reg" type="text" placeholder="Name"><br>\
-			<input id="email-reg" type="text" placeholder="Email"><br>\
+			<input id="email-reg" type="text" placeholder="Email(Gmail/Yahoo ID)"><br>\
 			<input id="phone" type="text" placeholder="Phone"><br>\
 			<input id="college" type="text" placeholder="College"><br>\
       <input id="passphrase-reg" type="password" placeholder="Password"><br>\
@@ -59,7 +59,7 @@ $('#moksha-login>.input-wrap').on('click','#get-Register',function(){
   var college = $('#college').val();
   var pass = $('#passphrase-reg').val();
   $.ajax({
-    url:'../../../api/account/signup.php',
+    url:'../../api/account/signup.php',
     type:'get',
     data:{name:name,email:email,pass:pass,phone:phone,college:college},
     dataType:'json',
@@ -67,7 +67,7 @@ $('#moksha-login>.input-wrap').on('click','#get-Register',function(){
       if(r.success==true)
       {
 		var moksha_id = parseInt(r.moksha_id);
-        alert('Successfully Registered. Your Moksha ID is ' + moksha_id + '. Login to Continue');
+        alert('Successfully Registered. Your Moksha ID is MOK-' + moksha_id + '. Please check your email & spam folder for the confirmation mail');
       }
       else {
         alert('Invalid or existing Credentials');
@@ -83,7 +83,7 @@ $('#moksha-login>.input-wrap').on('click','#get-logIn',function(){
   var phone = $('#phone-log').val();
   var pass = $('#passphrase').val();
   $.ajax({
-    url:'../../../api/account/login.php',
+    url:'../../api/account/login.php',
     type:'get',
     data:{pass:pass,user_var:phone},
     dataType:'json',
@@ -95,7 +95,7 @@ $('#moksha-login>.input-wrap').on('click','#get-logIn',function(){
         $('#lightbox,#moksha-login,#closeloginpop').fadeOut();
       }
       else {
-        alert('Incorrect Credentials');
+        alert('Incorrect Credentials. Go to contact page if you are having any problems.');
       }
     },
     error:function(e){
@@ -107,7 +107,7 @@ $('#moksha-login>.input-wrap').on('click','#get-logIn',function(){
 
 $('#top').on('click','.signout.profile',function(){
   $.ajax({
-    url:'../../../api/account/signout.php',
+    url:'../../api/account/signout.php',
     type:'get',
     dataType:'json',
     success:function(r){

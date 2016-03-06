@@ -19,7 +19,7 @@ $(function(){
   }
 
   $.ajax({
-    url:'../../../api/events/getcompetitions.php',
+    url:'../../api/events/getcompetitions.php',
     type:'get',
     dataType:'json',
     success:function(r){
@@ -39,7 +39,7 @@ $(function(){
     var event_id = Number($(this).attr('event-id'));
     if(event_id!=0){
       $.ajax({
-        url:'../../../api/events/event_list.php',
+        url:'../../api/events/event_list.php',
         type:'get',
         data:{event_id:event_id},
         dataType:'json',
@@ -49,8 +49,12 @@ $(function(){
           $('#event-register>.content>.event>.section-desc').empty().append('<p>'+r.description+'</p>');
           $('#event-register>.content>.rules-prizes>.rules>.section-desc').empty().append(r.rules);
           $('#event-register>.content>.rules-prizes>.prizes>.section-desc').empty().append(r.prizes);
+          $('#event-register>.content>.rules-prizes>.register-btn').remove();
+          if(!r.over) {
+          $('#event-register>.content>.rules-prizes').append('<button class="register-btn">Register</button>');
           $('#event-register>.content>.rules-prizes>.register-btn').attr('data-event',r.id);
           $('#event-register>.content>.rules-prizes>.register-btn').attr('data-name',r.name);
+          }
           $('#event-register>.content>.large-event-pic>img').attr('src',r.image_url);
           $('#event-register>.content>.large-event-pic>img').load(function(){
             $(this).css('display','block');
