@@ -33,7 +33,7 @@ body{
 	/*left: 0;*/
 }
 
-#accomodation-page, #contact-page{
+#accomodation-page, #contact-page, #sponsors-page{
 	visibility : hidden;
 	position: absolute;
 	left:100%;

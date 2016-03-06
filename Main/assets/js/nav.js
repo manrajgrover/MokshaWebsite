@@ -4,6 +4,7 @@ var nav = document.getElementById('panel'),
 	event_page = document.getElementById('event-page'),
 	accomodation_page = document.getElementById('accomodation-page');
 	contact_page = document.getElementById('contact-page');
+	sponsors_page = document.getElementById('sponsors-page');
 
 
 for (var i = nav.getElementsByTagName('li').length - 1; i >= 0; i--) {
@@ -22,6 +23,7 @@ for (var i = nav.getElementsByTagName('li').length - 1; i >= 0; i--) {
 				event_category.style.visibility = "hidden";
 				event_page.style.visibility = "hidden";
 				contact_page.style.visibility = "hidden";
+				sponsors_page.style.visibility = "hidden";
 
 				if (document.documentElement.clientWidth>=800){
 					competitions.style.left= "10%";
@@ -33,6 +35,7 @@ for (var i = nav.getElementsByTagName('li').length - 1; i >= 0; i--) {
 				event_page.style.left = "100%";
 				accomodation_page.style.left = "100%";
 				contact_page.style.left = "100%";
+				sponsors_page.style.left = "100%";
 
 				break;
 
@@ -43,12 +46,14 @@ for (var i = nav.getElementsByTagName('li').length - 1; i >= 0; i--) {
 				competitions.style.visibility = "hidden";
 				event_page.style.visibility = "hidden";
 				contact_page.style.visibility = "hidden";
+				sponsors_page.style.visibility = "hidden";
 
 				competitions.style.left="-100%";
 				event_category.style.left = "0%";
 				event_page.style.left = "100%";
 				accomodation_page.style.left = "100%";
 				contact_page.style.left = "100%";
+				sponsors_page.style.left = "100%";
 
 				break;
 			case "Competitions":
@@ -58,12 +63,14 @@ for (var i = nav.getElementsByTagName('li').length - 1; i >= 0; i--) {
 				event_category.style.visibility = "hidden";
 				competitions.style.visibility = "hidden";
 				contact_page.style.visibility = "hidden";
+				sponsors_page.style.visibility = "hidden";
 
 				competitions.style.left = "-100%";
 				event_category.style.left = "-100%";
 				event_page.style.left = "0%";
 				accomodation_page.style.left = "100%";
 				contact_page.style.left = "100%";
+				sponsors_page.style.left = "100%";
 
 				break;
 
@@ -74,11 +81,13 @@ for (var i = nav.getElementsByTagName('li').length - 1; i >= 0; i--) {
 				event_category.style.visibility = "hidden";
 				competitions.style.visibility = "hidden";
 				contact_page.style.visibility = "hidden";
+				sponsors_page.style.visibility = "hidden";
 
 				competitions.style.left = "-100%";
 				event_category.style.left = "-100%";
 				event_page.style.left = "-100%";
 				contact_page.style.left = "100%";
+				sponsors_page.style.left = "100%";
 				if (document.documentElement.clientWidth>=800){
 					accomodation_page.style.left= "10%";
 				}
@@ -88,9 +97,10 @@ for (var i = nav.getElementsByTagName('li').length - 1; i >= 0; i--) {
 
 				break;
 
-			case "Contact":
-				$('.title>h2').text('CONTACT US');
-				contact_page.style.visibility = "visible";
+			case "Sponsors":
+				$('.title>h2').text('SPONSORS');
+				sponsors_page.style.visibility = "visible";
+				contact_page.style.visibility = "hidden";
 				accomodation_page.style.visibility = "hidden";
 				event_page.style.visibility = "hidden";
 				event_category.style.visibility = "hidden";
@@ -100,6 +110,30 @@ for (var i = nav.getElementsByTagName('li').length - 1; i >= 0; i--) {
 				event_category.style.left = "-100%";
 				event_page.style.left = "-100%";
 				accomodation_page.style.left= "-100%";
+				contact_page.style.left = "100%";
+				if (document.documentElement.clientWidth>=800){
+					sponsors_page.style.left= "10%";
+				}
+				else{
+					sponsors_page.style.left = "0%";
+				}
+
+				break;
+				
+			case "Contact":
+				$('.title>h2').text('CONTACT US');
+				contact_page.style.visibility = "visible";
+				accomodation_page.style.visibility = "hidden";
+				event_page.style.visibility = "hidden";
+				event_category.style.visibility = "hidden";
+				competitions.style.visibility = "hidden";
+				sponsors_page.style.visibility = "hidden";
+
+				competitions.style.left = "-100%";
+				event_category.style.left = "-100%";
+				event_page.style.left = "-100%";
+				accomodation_page.style.left= "-100%";
+				sponsors_page.style.left = "-100%";
 				if (document.documentElement.clientWidth>=800){
 					contact_page.style.left= "10%";
 				}
