@@ -796,7 +796,11 @@ p.contact-text {
 		margin-right:5px;
 	}
 
+	#sponsors-page>section>div:not(.special)>div, #sponsors-page #associate-sponsors>div{
+		width:100%;
+	}
+	
 	#sponsors-page div.row{
-		flex-flow:wrap;
+		flex-flow: wrap;
 	}
 }
