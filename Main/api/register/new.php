@@ -2,8 +2,8 @@
 /**
  * @Author: Prabhakar Gupta
  * @Date:   2016-02-21 15:22:42
- * @Last Modified by:   Prabhakar Gupta
- * @Last Modified time: 2016-02-23 14:47:01
+ * @Last Modified by:   ManrajGrover
+ * @Last Modified time: 2016-03-05 13:04:57
  */
 session_start();
 require_once '../inc/connection.inc.php';
@@ -32,8 +32,33 @@ if($user_id > 0){
 	if(isset($query_check_row)){
 		$already = true;
 	} else {
-		$query = "INSERT INTO `event_registration` (`event_id`,`user_id`,`timestamp`) VALUES ('$event_id', '$user_id','$current_timestamp')";
+		$query = "INSERT INTO `event_registration` (`event_id`,`user_id`,`timestamp`) VALUES ('$event_id', '$user_id','$current_timestamp');";
+		$getDataQuery = "SELECT event_name, rules FROM events WHERE event_id='$event_id'";
+		$getUserDataQuery = "SELECT name, email FROM users WHERE user_id='$user_id'";
 		$success = (bool)mysqli_query($connection, $query);
+		$getDataSuccess = mysqli_query($connection, $getDataQuery);
+		$getUserDataSuccess = mysqli_query($connection, $getUserDataQuery);
+		$getData = $getDataSuccess->fetch_assoc();
+		$getUserData = $getUserDataSuccess->fetch_assoc();
+		$name = $getUserData["name"];
+		$name = ucwords($name);
+		$email = $getUserData["email"];
+		$event_name = $getData["event_name"];
+		$rules = $getData["rules"];
+		$to = "$email";
+        $subject = "Event Registration | Moksha 2016";
+        if(empty($rules)){
+        	$message ="<p>Dear $name,<br><br>You have successfully registered for the event <b>$event_name</b>. Please visit the event page on Facebook for more information.<br><br>";
+        }
+        else{
+        	$message ="<p>Dear $name,<br><br>You have successfully registered for the event <b>$event_name</b>. Please read the rules carefully and also visit the event page on Facebook for more information.<br><br>";
+        	$message = $message."Rules:<br><br>";
+        	$rules = nl2br(decryptText($rules));
+        	$message = $message.$rules;
+        }
+        $from = "ca.moksha@gmail.com";
+        $headers = "From: $from"."\nMIME-Version: 1.0\nContent-Type: text/html; charset=utf-8\n";
+        mail($to,$subject,$message,$headers);
 	}
 
 }

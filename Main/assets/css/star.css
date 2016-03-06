@@ -1,0 +1,30 @@
+/*
+* @Author: ManrajGrover
+* @Date:   2016-03-04 19:15:37
+* @Last Modified by:   ManrajGrover
+* @Last Modified time: 2016-03-04 21:35:07
+*/
+html, body{
+	background: url("../images/shaan.jpg") no-repeat center center fixed;
+	background-repeat: no-repeat;
+	background-size: cover;
+	-moz-background-size: cover;
+	-webkit-background-size: cover;
+	-o-background-size: cover;
+	font-size: 3.4vmin;
+	margin: 0;
+	padding:0;
+	overflow:auto;
+	height: 100%;
+	font-family: Mathlete;
+	src: url(../fonts/Mathlete-Skinny.otf);
+}
+
+#logo{
+	width: 30vmin;
+}
+
+.holder{
+	width: 40%;
+	margin: 5% 0% 5% 5%;
+}

@@ -9,6 +9,7 @@ require_once '../inc/connection.inc.php';
 require_once '../inc/function.inc.php';
 $name 		= clean_string($_GET['name']);
 $email 		= clean_string($_GET['email']);
+$send_password = clean_string($_GET['pass']);
 $password 	= encrypt_data(clean_string($_GET['pass']));
 $phone 		= clean_string($_GET['phone']);
 $college 	= clean_string($_GET['college']);
@@ -29,7 +30,7 @@ if($email_valid && !empty($name) && !empty($password) && !empty($phone) && !empt
 		$to = "$email";
         $subject = "Moksha 2016 Registration";
         $message ="<p>Dear $name,<br><br>
-        You have successfully registered for Moksha 2016. Your Moksha ID is <b>$mok_id</b> and your password is <b>$password</b>.<br><br>You'll need to show the below QR code to the security personnel at Moksha. Please keep it with you at all times.</p>
+        You have successfully registered for Moksha 2016. Your Moksha ID is <b>$mok_id</b> and your password is <b>$send_password</b>.<br><br>You'll need to show the below QR code to the security personnel at Moksha. Please keep it with you at all times.</p>
 				<br><img src='https://chart.googleapis.com/chart?cht=qr&chs=300x300&chl=$mok_id'/>";
         $from = "ca.moksha@gmail.com";
         $headers = "From: $from"."\nMIME-Version: 1.0\nContent-Type: text/html; charset=utf-8\n";
