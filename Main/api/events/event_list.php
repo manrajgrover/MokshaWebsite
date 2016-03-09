@@ -27,8 +27,9 @@ while($query_row = mysqli_fetch_assoc($query_run)){
 		'image_url'		=> $image_url,
 		'description'	=> decryptText($query_row['descp']),
 		'date'			=> timestamp_to_date($query_row['date']),
-		'rules'     => decryptText($query_row['rules']),
-		'prizes'		=> decryptText($query_row['prizes'])
+		'rules'     	=> decryptText($query_row['rules']),
+		'prizes'		=> decryptText($query_row['prizes']),
+		'over'			=> (bool)$query_row['registration_over'],
 		//'team_size'		=> (int)$query_row['team_size'],
 	);
 	//array_push($final_response, $temp_array);
