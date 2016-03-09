@@ -42,7 +42,7 @@ for (var i = nav.getElementsByTagName('li').length - 1; i >= 0; i--) {
 
 				break;
 
-			case "Mega-Events":
+			case "<nobr>Mega-Events</nobr>":
 				$('.title>h2').text('MEGA-EVENTS');
 				accomodation_page.style.visibility = "hidden";
 				event_category.style.visibility = "visible";
@@ -156,7 +156,7 @@ for (var i = nav.getElementsByTagName('li').length - 1; i >= 0; i--) {
 
 				break;
 
-			case "Entry-Procedure":
+			case "<nobr>Entry-Procedure</nobr>":
 				$('.title>h2').text('ENTRY PROCEDURE');
 				contact_page.style.visibility = "hidden";
 				accomodation_page.style.visibility = "hidden";
