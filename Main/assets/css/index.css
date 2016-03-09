@@ -832,6 +832,10 @@ p.contact-text {
 	background:blue;
 }
 
+#sponsors-page img[alt='SAIL']{
+	height:50%;
+}
+
 /*
 ******************************************************
 				ENTRY-PROCEDURE
