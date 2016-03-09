@@ -9,12 +9,12 @@ var nav = document.getElementById('panel'),
 
 for (var i = nav.getElementsByTagName('li').length - 1; i >= 0; i--) {
 	nav.getElementsByTagName('li')[i].onclick = function(){
-		
+
 		if ($(window).width()<800){
 			$("#toggle").trigger("click");
 		}
-		
-		
+
+
 		switch(this.innerHTML){
 			case "Home":
 			  $('.title>h2').text('HOME');
@@ -39,8 +39,8 @@ for (var i = nav.getElementsByTagName('li').length - 1; i >= 0; i--) {
 
 				break;
 
-			case "Events":
-				$('.title>h2').text('EVENTS');
+			case "Mega-Events":
+				$('.title>h2').text('MEGA-EVENTS');
 				accomodation_page.style.visibility = "hidden";
 				event_category.style.visibility = "visible";
 				competitions.style.visibility = "hidden";
@@ -119,7 +119,7 @@ for (var i = nav.getElementsByTagName('li').length - 1; i >= 0; i--) {
 				}
 
 				break;
-				
+
 			case "Contact":
 				$('.title>h2').text('CONTACT US');
 				contact_page.style.visibility = "visible";

@@ -68,6 +68,21 @@ $(function(){
     }
   });
 
+  $('#event-category-page .register-btn').click(function(){
+    var event_id = Number($(this).attr('data-id'));
+    $.ajax({
+      url:'../../api/events/events.php',
+      type:'get',
+      data:{event_id:event_id},
+      dataType:'json',
+      success:function(r){
+      },
+      error:function(e){
+        console.log(e);
+      }
+    });
+  });
+
   $('.logo-img').load(function(){
     ++loaded;
   });

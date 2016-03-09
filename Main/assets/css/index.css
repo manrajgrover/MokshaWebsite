@@ -311,6 +311,28 @@ nav li:hover
 	margin-left: 0;
 }
 
+#event-category-page{
+	display:flex;
+	justify-content: center;
+}
+#event-category-page>.event{
+	position:relative!important;
+	z-index:1;
+	width:47%!important;
+	height:430px;
+	color:#FFF;
+	font-weight:bold;
+	text-shadow:1px 1px #000;
+}
+#event-category-page .border{
+	width:2%!important;
+}
+#event-category-page p{
+	font-size:15px;
+}
+#event-category-page .register-btn{
+	margin-top:0px!important;
+}
 /*
 **************************************************************
 							EVENTS
@@ -335,7 +357,7 @@ nav li:hover
 	margin-top:30px;
 	padding: 0;
     display:flex;
-		flex-wrap:wrap;
+		flex-wrap: wrap;
 }
 
 .main-content{
@@ -444,6 +466,96 @@ h1, h2, h3{
 	cursor:pointer;
 }
 
+
+.event[data-for="shaan"]::before{
+	content:'';
+	display:block;
+	position:absolute;
+	top:0px;
+	left:0px;
+	z-index:-1;
+	width:100%;
+	height:100%;
+	background: url("../images/Shaan_Web_Spons.jpg");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	-moz-background-size: cover;
+	-webkit-background-size: cover;
+	-o-background-size: cover;
+}
+.event[data-for="shaan"]::after{
+	content:'';
+	display:block;
+	position:absolute;
+	top:0px;
+	left:0px;
+	z-index:-1;
+	width:100%;
+	height:100%;
+	background-color: #000;
+	opacity:0.6;
+}
+
+.event[data-for="abish"]::before{
+	content:'';
+	display:block;
+	position:absolute;
+	top:0px;
+	left:0px;
+	z-index:-1;
+	width:100%;
+	height:100%;
+	background: url("../images/abish.jpg");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	-moz-background-size: cover;
+	-webkit-background-size: cover;
+	-o-background-size: cover;
+}
+.event[data-for="abish"]::after{
+	content:'';
+	display:block;
+	position:absolute;
+	top:0px;
+	left:0px;
+	z-index:-1;
+	width:100%;
+	height:100%;
+	background-color: #000;
+	opacity:0.6;
+}
+
+.event[data-for="tvf"]::before{
+	content:'';
+	display:block;
+	position:absolute;
+	top:0px;
+	left:0px;
+	z-index:-1;
+	width:100%;
+	height:100%;
+	background: url("../images/TVF.jpg");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	-moz-background-size: cover;
+	-webkit-background-size: cover;
+	-o-background-size: cover;
+}
+.event[data-for="tvf"]::after{
+	content:'';
+	display:block;
+	position:absolute;
+	top:0px;
+	left:0px;
+	z-index:-1;
+	width:100%;
+	height:100%;
+	background-color: #000;
+	opacity:0.6;
+}
 /*
 ******************************************************
 				ACCOMODATION
@@ -800,12 +912,12 @@ p.contact-text {
 	#moksha-login>.input-wrap{
 		height:65%!important;
 	}
-	
+
 	#small-events{
 		margin:4vw;
 		font-size: small;
 	}
-	
+
 	.small-events-list{
 		min-width: 35vw;
 		margin:0;
@@ -815,7 +927,7 @@ p.contact-text {
 	#sponsors-page>section>div:not(.special)>div, #sponsors-page #associate-sponsors>div{
 		width:100%;
 	}
-	
+
 	#sponsors-page div.row{
 		flex-flow: wrap;
 	}
