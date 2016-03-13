@@ -10,10 +10,18 @@ Current Volunteers:
 2. Manav
 3. Nithila
 4. [Prabhakar Gupta](https://github.com/prabhakar267)
+5. Manraj Singh
 
 ## Moksha Main Website
 This directory will contain the dynamic website with Login, Registration and Event ID details.
-Stack to be used: LAMP stack. Work in this directory will start once mockups are created.
+
+1. Divyanshu Kalra
+2. Mayank Badola
+3. Prabhakar Gupta
+4. Manraj Singh
+5. Shubham Kumaram
+6. Kamakshi Suri
+
 
 # Contribution Guidelines
 
