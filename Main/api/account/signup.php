@@ -28,13 +28,7 @@ if($email_valid && !empty($name) && !empty($password) && !empty($phone) && !empt
     $sql="UPDATE `users` SET `mok_id`='$mok_id'WHERE `email`='$email'";
     mysqli_query($connection,$sql);
 		$to = "$email";
-<<<<<<< HEAD
-        $subject = "Moksha 2016 Registration";
-        $message ="<p>Dear $name,<br><br>
-        You have successfully registered for Moksha 2016. Your Moksha ID is <b>$mok_id</b> and your password is <b>$send_password</b>.<br><br>You'll need to show the below QR code to the security personnel at Moksha. Please keep it with you at all times.</p>
-        <br><img src='https://chart.googleapis.com/chart?cht=qr&chs=300x300&chl=$mok_id'/>";
-=======
-        $subject = "Registration and Entry Procedure | Moksha'16";
+		$subject = "Registration and Entry Procedure | Moksha'16";
         $message ="<div style='color:black;'>
 					<p>Dear $name,<br><br>
 					You have successfully registered for Moksha '16, NSIT Delhi. Your Moksha ID is <b>$mok_id</b> and your password is <b>$send_password</b>.
@@ -42,22 +36,21 @@ if($email_valid && !empty($name) && !empty($password) && !empty($phone) && !empt
 					<br><br>For entry into the college premises, the following apps need to be downloaded & physically verified at the entry gates:
 					<br>
 					<br>1. <b><u>Loud Shout App</u></b><br><br>
-					Download link (Android): http://bit.ly/1W5iHhg
-					<br>Download link (iOS): http://goo.gl/Z1ASCu
+					Download link (Android): <a href='http://bit.ly/1W5iHhg'>http://bit.ly/1W5iHhg</a>
+					<br>Download link (iOS): <a href='http://goo.gl/Z1ASCu'>http://goo.gl/Z1ASCu</a>
 					<br><br>
 					<b>Note</b>: After registering on the Loudshout App, you have to choose '<b>NSIT, Delhi</b>' as your Basecamp.
 					<br><br>
 					2. <b><u>Follo App</u></b>
 					<br>
-					Download link (Android): http://bit.ly/1SyAeiO
-					<br>Download link (iOS): https://goo.gl/Jo0h2G
+					Download link (Android): <a href='http://bit.ly/1SyAeiO'>http://bit.ly/1SyAeiO</a>
+					<br>Download link (iOS): <a href='https://goo.gl/Jo0h2G'>https://goo.gl/Jo0h2G</a>
 					<br><br>
 					<b>Note</b>: No need for any referral codes, only the app download needs to be displayed.
 					<br><br>
 					<b><u>Important</u></b>: Users of phones that do not support these apps would be required to show & verify this fact by displaying their phones at the entry gate.
 					<br></div>
 					<img src='https://chart.googleapis.com/chart?cht=qr&chs=200x200&chl=$mok_id'/>";
->>>>>>> ddf54c9e2e2497405aa2fa5b23d9385c6e8f26bf
         $from = "ca.moksha@gmail.com";
         $headers = "From: $from"."\nMIME-Version: 1.0\nContent-Type: text/html; charset=utf-8\n";
         mail($to,$subject,$message,$headers);
