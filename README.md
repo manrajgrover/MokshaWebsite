@@ -8,20 +8,19 @@ Current Volunteers:
 
 1. [Anshul Khanna](https://github.com/anshul17khanna)
 2. Manav
-3. Nithila
-4. [Prabhakar Gupta](https://github.com/prabhakar267)
-5. Manraj Singh
+3. [Manraj Singh](https://github.com/ManrajGrover)
+4. Nithila
+5. [Prabhakar Gupta](https://github.com/prabhakar267)
 
 ## Moksha Main Website
 This directory will contain the dynamic website with Login, Registration and Event ID details.
 
 1. Divyanshu Kalra
-2. Mayank Badola
-3. Prabhakar Gupta
-4. Manraj Singh
-5. Shubham Kumaram
-6. Kamakshi Suri
-
+2. [Kamakshi Suri](https://github.com/kamsuri)
+3. [Manraj Singh](https://github.com/ManrajGrover)
+4. [Mayank Badola](https://github.com/mbad0la)
+5. [Prabhakar Gupta](https://github.com/prabhakar267)
+6. [Shubham Kumaram](https://github.com/shubhamkrm)
 
 # Contribution Guidelines
 
