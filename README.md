@@ -24,5 +24,4 @@ This directory will contain the dynamic website with Login, Registration and Eve
 
 # Contribution Guidelines
 
-1. Everyone will fork this repository and submit Pull request.
-2. If anyone is not aware of Git, please watch some good lectures before contributing.
+No further contributions will be accepted. This repository is not maintained anymore.
