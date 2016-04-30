@@ -1,5 +1,5 @@
 # Moksha Website
-This repository contains two websites. One is basic static placeholder website with CountDown. And another is the main website.
+[Deprecated] This repository contains two websites. One is basic static placeholder website with CountDown. And another is the main website.
 
 ## Moksha Static Website
 This directory will contain the static website. We plan to use Parallax theme for it. It will be one page website with Sponsors listed and previous year pictures.
